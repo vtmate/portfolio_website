@@ -1,0 +1,437 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-light-blue text-blue transition-all dark:bg-dark-blue dark:text-light-blue"
+  >
+    <!-- cubes -->
+    <div class="bg-cube left-40 top-20 h-16 w-16 bg-cube1"></div>
+    <div class="bg-cube right-40 top-80 h-80 w-80 bg-cube2"></div>
+    <div class="bg-cube left-96 top-60 h-32 w-32 bg-cube3"></div>
+    <div class="bg-cube right-80 top-40 h-60 w-60 bg-cube4"></div>
+    <div class="bg-cube left-32 top-72 h-40 w-40 bg-cube5"></div>
+
+    <div class="flex justify-center">
+      <div class="flex w-[60rem] justify-end">
+        <div
+          class="glass fixed left-1/2 top-[3rem] h-[30rem] w-[20rem] -translate-x-[29rem] rounded-[2rem] p-4"
+        >
+          <header>
+            <div class="flex justify-between">
+              <!-- <div>
+                <p class="text-blue-tr">Hi! I am</p>
+                <h1>
+                  <span
+                    class="ml[-2px] -mb-8 mt-[0.4rem] text-[4rem] font-medium"
+                    >Máté</span
+                  >
+                  <span class="-mt-8 text-[1.7rem] font-normal"
+                    >Varga-Tóth</span
+                  >
+                </h1>
+                <p class="text-blue-tr -mt-[0.9rem] ml-[4.4rem] text-[0.8rem]">
+                  or just vtmate
+                </p>
+              </div> -->
+              <img
+                class="name-dark w-40"
+                src="../assets/name-dark.svg"
+                alt="my name"
+              />
+              <img
+                class="name-light w-40"
+                src="../assets/name-light.svg"
+                alt="my name"
+              />
+              <h1 class="sr-only">Hello! I'm Máté Varga-Tóth or just vtmate</h1>
+              <img
+                class="h-36 w-28 rounded-2xl border object-cover"
+                src="../assets/profile.JPG"
+                alt="profile picture from me"
+              />
+            </div>
+          </header>
+          <div class="mt-6 flex justify-center">
+            <div class="h-12 w-52 text-center leading-5">
+              <!-- <p>An eager full-stack web developer from Hungary</p> -->
+              <div class="line mt-2"></div>
+              <ul class="py-8">
+                <li class="mt-2">
+                  <a href="#about" class="group inline-block"
+                    >about<span
+                      class="block h-0.5 w-0 translate-x-1/2 bg-cube1 transition-all duration-500 group-hover:w-1/2"
+                    ></span
+                  ></a>
+                </li>
+                <li class="mt-2">
+                  <a href="#studies" class="group inline-block"
+                    >studies<span
+                      class="block h-0.5 w-0 translate-x-1/2 bg-cube1 transition-all duration-500 group-hover:w-1/2"
+                    ></span
+                  ></a>
+                </li>
+                <li class="mt-2">
+                  <a href="#skills" class="group inline-block"
+                    >skills<span
+                      class="block h-0.5 w-0 translate-x-1/2 bg-cube1 transition-all duration-500 group-hover:w-1/2"
+                    ></span
+                  ></a>
+                </li>
+                <li class="mt-2">
+                  <a href="#projects" class="group inline-block"
+                    >projects<span
+                      class="block h-0.5 w-0 translate-x-1/2 bg-cube1 transition-all duration-500 group-hover:w-1/2"
+                    ></span
+                  ></a>
+                </li>
+                <li class="mt-2">
+                  <a href="#contact" class="group inline-block"
+                    >contact<span
+                      class="block h-0.5 w-0 translate-x-1/2 bg-cube1 transition-all duration-500 group-hover:w-1/2"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
+              <div class="line"></div>
+            </div>
+          </div>
+          <!-- <div
+            class="glass fixed -right-[38rem] top-0 h-24 w-12 rounded-full"
+          ></div>
+          <div
+            class="glass card fixed -right-[38rem] top-[21rem] h-36 w-12 rounded-full"
+          ></div> -->
+        </div>
+        <!-- informations -->
+        <div class="m-[3rem] mr-[5rem] w-[33rem]">
+          <secton class="card glass relative">
+            <div id="about" class="absolute -top-12 left-0"></div>
+            <div class="p-8 pr-12">
+              <h3
+                data-i18n="introduction"
+                class="mb-4 text-lg font-semibold leading-5"
+              >
+                A future-focused web developer ready to tackle real-world
+                challenges.
+              </h3>
+              <p>
+                <span data-i18n="about_me1"
+                  >I'm a 21-year-old student currently pursuing a degree in
+                  Software Engineering at</span
+                >
+                <a
+                  href="https://www.inf.elte.hu/"
+                  target="_blank"
+                  class="underline"
+                  >ELTE</a
+                >
+                <span data-i18n="about_me2"
+                  >. With two years of university studies under my belt, I've
+                  cultivated a strong passion for web development and have
+                  gained hands-on experience in building dynamic, user-friendly
+                  web applications.</span
+                >
+              </p>
+            </div>
+            <h2 class="vertical mr-2 text-center">
+              A <br />
+              B <br />
+              O <br />
+              U <br />
+              T
+            </h2>
+          </secton>
+          <secton class="card glass relative">
+            <div id="studies" class="absolute -top-12 left-0"></div>
+
+            <div class="">
+              <div class="mx-12">
+                <ol class="relative border-s-2 border-blue border-opacity-20">
+                  <li class="mb-10 ms-4 pt-8">
+                    <time class="mb-1 text-sm font-normal leading-none"
+                      >September 2022 -
+                    </time>
+                    <h3 class="text-lg font-semibold">
+                      <a
+                        class="underline"
+                        href="https://www.inf.elte.hu/"
+                        target="_blank"
+                        >ELTE IK</a
+                      >
+                    </h3>
+                    <p class="mb-4 text-base font-normal leading-5">
+                      Ongoing computer science degree. <br />
+                      (Expected graduation in May 2025)
+                    </p>
+                    <!-- <a
+                      href="#"
+                      class="inline-flex items-center rounded-lg border border-blue px-4 py-2 text-sm font-medium focus:z-10 focus:outline-none focus:ring-4 dark:border-light-blue"
+                      >Learn more
+                      <svg
+                        class="ms-2 h-3 w-3 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        /></svg
+                    ></a> -->
+                  </li>
+                  <li class="mb-10 ms-4">
+                    <time class="mb-1 text-sm font-normal leading-none"
+                      >Summer 2022</time
+                    >
+                    <h3 class="text-lg font-semibold">
+                      <a
+                        class="underline"
+                        href="https://www.nubiki.hu/content_en/bemutatkozas.html"
+                        target="_blank"
+                        >Nubiki</a
+                      >
+                    </h3>
+                    <p class="text-base font-normal leading-5">
+                      Had the oportunity to work at Nubiki as a data-analyzer.
+                    </p>
+                  </li>
+                  <li class="ms-4 pb-8">
+                    <time class="mb-1 text-sm font-normal leading-none"
+                      >September 2016 - June 2022</time
+                    >
+                    <h3 class="text-lg font-semibold">
+                      <a
+                        class="underline"
+                        href="https://www.illyes-bors.com/"
+                        target="_blank"
+                        >Illyés Gyula Gimnázium</a
+                      >
+                    </h3>
+                    <p class="text-base font-normal leading-5">
+                      <!-- Specialized in IT and Mathematics at an advanced level.
+                      These faculties fueled my enthusiasm for software
+                      engineering. -->
+                      Highschool. Took faculties in IT and Mathematics at an
+                      advanced level. <br />
+                      This place is where I fell in love with software
+                      engineering.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <h2 class="vertical mr-2 text-center">
+              S <br />
+              T <br />
+              U <br />
+              D <br />
+              I <br />
+              E <br />
+              S
+            </h2>
+          </secton>
+          <secton class="card glass relative">
+            <div id="skills" class="absolute -top-12 left-0"></div>
+            <img
+              class="m-auto w-3/5"
+              src="../assets/stack-map.png"
+              alt="programming languages and tools I use"
+            />
+            <h2 class="vertical mr-2 text-center">
+              S <br />
+              K <br />
+              I <br />
+              L <br />
+              L <br />
+              S
+            </h2>
+          </secton>
+          <secton class="card glass relative">
+            <div id="projects" class="absolute -top-12 left-0"></div>
+
+            <div class="m-4 grid w-full grid-cols-7 gap-3">
+              <div
+                class="group relative col-start-1 col-end-4 row-start-1 row-end-3 h-60 cursor-pointer overflow-hidden rounded-xl bg-cube4"
+              >
+                <img
+                  class="ml-6 mt-12 w-full rounded-3xl transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
+                  src="../assets/portfolio-screen.png"
+                  alt="a screenshot of this portfolio page"
+                />
+              </div>
+              <div class="col-start-4 col-end-8 rounded-xl bg-cube3"></div>
+              <div class="col-start-4 col-end-6 rounded-xl bg-cube3"></div>
+              <div class="col-start-6 col-end-8 rounded-xl bg-cube3"></div>
+              <div class="col-start-1 col-end-6 rounded-xl bg-cube3"></div>
+              <div class="col-start-6 col-end-8 rounded-xl bg-cube3"></div>
+            </div>
+            <h2 class="vertical mr-2 text-center">
+              P <br />
+              R <br />
+              O <br />
+              J <br />
+              E <br />
+              C <br />
+              T <br />
+              S
+            </h2>
+          </secton>
+          <secton class="card glass relative">
+            <div id="contact" class="absolute -top-12 left-0"></div>
+            <div class="mx-4 mb-20 mt-20">
+              <h1 class="h-text mb-8 text-center">
+                Want to tell us something?
+              </h1>
+              <form class="mx-auto max-w-md">
+                <div class="group relative z-0 mb-5 w-full">
+                  <input
+                    type="email"
+                    name="floating_email"
+                    id="floating_email"
+                    class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_email"
+                    class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+                    >Email address</label
+                  >
+                </div>
+                <div class="grid md:grid-cols-2 md:gap-6">
+                  <div class="group relative z-0 mb-5 w-full">
+                    <input
+                      type="text"
+                      name="floating_first_name"
+                      id="floating_first_name"
+                      class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
+                      placeholder=" "
+                      required
+                    />
+                    <label
+                      for="floating_first_name"
+                      class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
+                      >First name</label
+                    >
+                  </div>
+                  <div class="group relative z-0 mb-5 w-full">
+                    <input
+                      type="text"
+                      name="floating_last_name"
+                      id="floating_last_name"
+                      class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
+                      placeholder=" "
+                      required
+                    />
+                    <label
+                      for="floating_last_name"
+                      class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
+                      >Last name</label
+                    >
+                  </div>
+                </div>
+                <div class="group relative z-0 mb-5 w-full">
+                  <input
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    name="floating_phone"
+                    id="floating_phone"
+                    class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="floating_phone"
+                    class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
+                    >Phone number (123-456-7890)</label
+                  >
+                </div>
+
+                <div class="mb-4">
+                  <label for="message" class="0 mb-2 block text-sm"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="text-gray-900 bg-gray-50 border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full rounded-lg border p-2.5 text-sm"
+                    placeholder="Write your thoughts here..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="text-white focus:ring-blue-300 dar-700ue-800 w-full rounded-lg bg-[#a6c1ee] px-5 py-2.5 text-center text-sm font-medium hover:bg-[#87acec] focus:outline-none focus:ring-4 sm:w-auto"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <h2 class="vertical mr-2 text-center">
+              C <br />
+              O <br />
+              N <br />
+              T <br />
+              A <br />
+              C <br />
+              T
+            </h2>
+          </secton>
+        </div>
+      </div>
+      <div
+        class="glass fixed left-1/2 top-[3rem] w-12 translate-x-[26rem] rounded-full"
+      >
+        <div class="flex justify-center">
+          <button
+            class="sun mt-1 h-10 w-10 rounded-full border-light-blue bg-cube1 transition-all duration-150 hover:border-4"
+          >
+            &#9790;
+          </button>
+          <button
+            class="moon mt-1 h-10 w-10 rounded-full border-blue bg-cube1 transition-all duration-150 hover:border-4"
+          >
+            &#9728;
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <button
+            id="lan-switch"
+            class="mb-1 mt-1 h-10 w-10 rounded-full border-blue bg-cube1 font-bold transition-all duration-150 hover:border-4 dark:border-light-blue"
+            data-i18n="lan-switch"
+          >
+            en
+          </button>
+        </div>
+      </div>
+      <div
+        class="glass fixed left-1/2 top-[24rem] h-36 w-12 translate-x-[26rem] rounded-full"
+      >
+        <img
+          class="mx-auto mt-2 w-8"
+          src="../assets/github-logo.svg"
+          alt="logo of github"
+        />
+        <img
+          class="mx-auto my-1 w-7"
+          src="../assets/linkedin-logo.svg"
+          alt="logo of linkedin"
+        />
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <script src="move.js"></script>
+    <!-- <script src="lan-switch.js"></script> -->
+    <script src="theme-switch.js"></script>
+  </body>
+</html>

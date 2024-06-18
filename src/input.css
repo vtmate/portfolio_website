@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-cube {
+    box-shadow: inset 0 4px 16px 0 #00000070;
+    /* box-shadow: inset 0 4px 16px 0 rgba(5, 56, 87, 0.551); */
+    @apply fixed -z-10 rounded-2xl opacity-20;
+  }
+
+  .line {
+    @apply h-[2px] w-52 bg-blue-tr opacity-40 dark:bg-light-blue;
+  }
+
+  .glass {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 16px 0 rgba(4, 42, 59, 0.16);
+    display: inline-block;
+    /* box-shadow: inset 0 4px 16px 0 rgba(5, 56, 87, 0.151); */
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    border-radius: 1rem;
+    /* transition: all 0.2s ease-in-out; */
+    @apply flex justify-between;
+  }
+}
+
+@layer utilities {
+  .border {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .vertical {
+    @apply text-5xl font-extrabold opacity-10;
+  }
+
+  .display-none {
+    @apply hidden;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  --blue: rgb(19, 36, 56);
+  --blue-tr: rgba(19, 36, 56, 0.459);
+
+  --bg: rgb(219, 228, 236);
+  --bg-cube: rgba(121, 166, 202, 0.427);
+  --bg-cube2: rgba(255, 0, 0, 0.39);
+
+  color: var(--blue);
+
+  /* ocean */
+  /* --bg: rgb(27, 65, 99);
+    --bg-cube: rgba(134, 95, 50, 0.427);
+    color: rgb(226, 235, 243); */
+
+  /* space */
+  /* --bg: rgb(7, 31, 52);
+    --bg-cube: rgba(254, 212, 0, 0.427);
+    color: rgb(226, 235, 243);
+    --bg-cube2: rgba(140, 78, 175, 0.39); */
+
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 60rem;
+  display: flex;
+  justify-content: right;
+}
+
+.light-text {
+  color: var(--blue-tr);
+}
+
+/* ________________________HERO SECTION___________________________ */
+
+.hero {
+  position: fixed;
+  top: 3rem;
+  /* top: 50%; */
+  left: 50%;
+  height: 30rem;
+  width: 18rem;
+  transform: translateX(-27rem);
+  /* transform: translate(-27rem, -50%); */
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top img {
+  width: 7rem;
+  height: 9rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.first-name {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0.4rem 0rem -2rem -2px;
+}
+
+.surname {
+  margin-top: -2rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.nickname {
+  font-size: 0.8rem;
+  margin-top: -0.9rem;
+  margin-left: 4.4rem;
+}
+
+.navbar-holder {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue-tr);
+}
+
+/* ________________________INFORMATIONS___________________________ */
+.informations {
+  width: 33rem;
+  margin: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.card {
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 0.8rem;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* .card:hover{
+    opacity: 1;
+    background-color: red;
+}
+
+.informations:hover{
+    opacity: 0.4;
+} */
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px 0 rgba(4, 42, 59, 0.16);
+  /* box-shadow: inset 0 4px 16px 0 rgba(5, 56, 87, 0.151); */
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  background-color: var(--bg-cube);
+  top: 5rem;
+  left: 10rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.bg2 {
+  position: fixed;
+  z-index: -1;
+  background-color: var(--bg-cube2);
+  top: 20rem;
+  right: 10rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card to Modal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .modal {
+        transition: all 0.5s ease;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 20;
+      }
+
+      .modal.show {
+        opacity: 1;
+        visibility: visible;
+        width: 80%;
+        height: 80%;
+      }
+
+      .modal-content {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .modal-content.show {
+        opacity: 1;
+      }
+
+      .modal.closing {
+        width: 80%;
+        height: 80%;
+      }
+
+      .overlay {
+        transition: opacity 0.5s ease;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+      }
+
+      .overlay.show {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex min-h-screen items-center justify-center">
+    <div
+      class="card bg-white relative h-48 w-64 transform cursor-pointer p-4 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+      id="card"
+    >
+      <h2 class="text-lg font-semibold">Click Me!</h2>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+      <p class="text-sm">This is a card. Click to expand into a modal.</p>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div
+      class="modal bg-white fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-lg p-8 shadow-lg"
+      id="modal"
+    >
+      <button class="text-gray-600 absolute right-2 top-2" id="closeButton">
+        &times;
+      </button>
+      <div class="modal-content" id="modalContent">
+        <h2 class="text-2xl font-semibold">Modal Title</h2>
+        <p class="mt-4">
+          This is the content of the modal. It expanded from the card you
+          clicked.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const card = document.getElementById("card");
+      const modal = document.getElementById("modal");
+      const modalContent = document.getElementById("modalContent");
+      const closeButton = document.getElementById("closeButton");
+      const overlay = document.getElementById("overlay");
+
+      card.addEventListener("click", () => {
+        modal.classList.add("show");
+        overlay.classList.add("show");
+        setTimeout(() => {
+          modalContent.classList.add("show");
+        }, 500); // Match the modal transition duration
+      });
+
+      closeButton.addEventListener("click", () => {
+        modalContent.classList.remove("show");
+        modal.classList.add("closing");
+        overlay.classList.remove("show");
+        setTimeout(() => {
+          modal.classList.remove("show");
+          modal.classList.remove("closing");
+        }, 300); // Match the modal content transition duration
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vargatm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg2"></div>
+    <div class="center">
+      <div class="content">
+        <div class="hero glass">
+          <header>
+            <div class="header-top">
+              <div class="header-text">
+                <p class="light-text">Hi! I am</p>
+                <h1>
+                  <div class="first-name">Máté</div>
+                  <span class="surname">Varga-Tóth</span>
+                </h1>
+                <p class="nickname light-text">or just vtmate</p>
+              </div>
+              <img src="assets/profile.JPG" alt="profile picture from me" />
+            </div>
+          </header>
+
+          <div class="navbar-holder">
+            <div class="navbar">
+              <p>An eager full-stack developer from Hungary</p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="informations">
+          <section class="card glass"></section>
+          <section class="card glass"></section>
+          <section class="card glass"></section>
+          <section class="card glass"></section>
+          <section class="card glass"></section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
