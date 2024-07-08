@@ -6,7 +6,7 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body
-    class="bg-cube1 text-blue transition-all dark:bg-dark-blue dark:text-light-blue lg:bg-light-blue"
+    class="text-blue transition-all dark:bg-dark-blue dark:text-light-blue lg:bg-light-blue"
   >
     <!-- cubes -->
     <div class="bg-cube left-40 top-20 h-16 w-16 bg-cube1"></div>
@@ -16,9 +16,9 @@
     <div class="bg-cube left-32 top-72 h-40 w-40 bg-cube5"></div>
 
     <div class="flex justify-center">
-      <div class="flex w-[60rem] justify-end">
+      <div class="flex w-[60rem] flex-col justify-end lg:flex-row">
         <div
-          class="glass fixed left-1/2 top-[3rem] h-[30rem] w-[20rem] -translate-x-[29rem] rounded-[2rem] p-4"
+          class="glass mx-auto mt-8 h-[30rem] w-[20rem] rounded-[2rem] p-4 lg:fixed lg:left-1/2 lg:top-[3rem] lg:mx-0 lg:mt-0 lg:-translate-x-[29rem]"
         >
           <header>
             <div class="flex justify-between">
@@ -107,7 +107,7 @@
           ></div> -->
         </div>
         <!-- informations -->
-        <div class="m-[3rem] mr-[5rem] w-[33rem]">
+        <div class="m-[3rem] mx-auto w-11/12 max-w-[33rem] lg:m-0 lg:mr-[5rem]">
           <secton class="card glass relative">
             <div id="about" class="absolute -top-12 left-0"></div>
             <div class="p-8 pr-12">
@@ -440,7 +440,7 @@
         </div>
       </div>
       <div
-        class="glass fixed left-1/2 top-[3rem] w-12 translate-x-[26rem] rounded-full"
+        class="glass fixed left-4 top-4 w-12 rounded-full lg:left-1/2 lg:top-[3rem] lg:translate-x-[26rem]"
       >
         <div class="flex justify-center">
           <button
@@ -465,7 +465,7 @@
         </div>
       </div>
       <div
-        class="glass fixed left-1/2 top-[24rem] h-36 w-12 translate-x-[26rem] rounded-full"
+        class="glass fixed left-4 top-32 h-36 w-12 rounded-full lg:left-1/2 lg:top-[24rem] lg:translate-x-[26rem]"
       >
         <img
           class="mx-auto mt-2 w-8"
