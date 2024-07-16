@@ -1,35 +1,12 @@
-// const arcadeBtn = document.getElementById("arcade-btn");
-// const arcadeModal = document.getElementById("arcade-modal");
-// const arcadeClose = document.getElementById("arcade-close");
-
-// const wageBtn = document.getElementById("wage-btn");
-// const wageModal = document.getElementById("wage-modal");
-// const wageClose = document.getElementById("wage-close");
-
-// // const projects = ["arcade", "wage"];
-
-// // projects.forEach((project) => {
-// //   const project = document.getElementById(`${project}-btn`);
-// // });
-
-// arcadeBtn.addEventListener("click", () => {
-//   arcadeModal.classList.remove("hidden");
-// });
-
-// arcadeClose.addEventListener("click", () => {
-//   arcadeModal.classList.add("hidden");
-// });
-
-// wageBtn.addEventListener("click", () => {
-//   wageModal.classList.remove("hidden");
-// });
-
-// wageClose.addEventListener("click", () => {
-//   wageModal.classList.add("hidden");
-// });
-
 const projectElements = {};
-const projects = ["arcade", "wage", "bomberman"];
+const projects = [
+  "arcade",
+  "wage",
+  "bomberman",
+  "cartographer",
+  "jobhunter",
+  "portfolio",
+];
 
 const overlay = document.getElementById("overlay");
 
@@ -41,18 +18,28 @@ projects.forEach((project) => {
   projectElements[`${project}Close`] = document.getElementById(
     `${project}-close`,
   );
+  projectElements[`${project}Content`] = document.getElementById(
+    `${project}-content`,
+  );
 });
 
 projects.forEach((project) => {
   const btn = projectElements[`${project}Btn`];
   const modal = projectElements[`${project}Modal`];
   const close = projectElements[`${project}Close`];
+  const content = projectElements[`${project}Content`];
 
   btn.addEventListener("click", () => {
     modal.classList.remove("hidden");
-    modal.classList.toggle("h-0");
-    modal.classList.toggle("h-auto");
-    // modal.classList.add("text-cube2");
+    setTimeout(() => {
+      modal.classList.toggle("h-0");
+      modal.classList.toggle("h-40");
+      modal.classList.add("p-4");
+    }, 10);
+    setTimeout(() => {
+      content.classList.toggle("opacity-0");
+      content.classList.toggle("opacity-100");
+    }, 200);
     overlay.classList.remove("invisible");
     overlay.classList.add("visible");
     overlay.classList.toggle("opacity-0");
@@ -60,9 +47,16 @@ projects.forEach((project) => {
   });
 
   close.addEventListener("click", () => {
-    modal.classList.toggle("h-0");
-    modal.classList.toggle("h-auto");
-    modal.classList.add("hidden");
+    content.classList.toggle("opacity-0");
+    content.classList.toggle("opacity-100");
+    setTimeout(() => {
+      modal.classList.toggle("h-0");
+      modal.classList.toggle("h-40");
+      modal.classList.remove("p-4");
+    }, 100);
+    setTimeout(() => {
+      modal.classList.add("hidden");
+    }, 300);
     overlay.classList.add("invisible");
     overlay.classList.remove("visible");
     overlay.classList.toggle("opacity-0");

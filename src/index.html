@@ -266,6 +266,11 @@
                 id="arcade-btn"
                 class="group relative col-start-1 col-end-4 row-start-1 row-end-3 cursor-pointer overflow-hidden rounded-xl bg-cube4"
               >
+                <h3
+                  class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
+                >
+                  Arcade Game
+                </h3>
                 <img
                   class="absolute left-6 top-12 h-72 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
                   src="../assets/arcade_game.png"
@@ -278,6 +283,11 @@
                 id="wage-btn"
                 class="group relative col-start-4 col-end-8 cursor-pointer overflow-hidden rounded-xl bg-cube4"
               >
+                <h3
+                  class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
+                >
+                  Wage Calculator
+                </h3>
                 <img
                   class="absolute left-6 top-12 h-40 rounded-3xl border-2 border-light-blue transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
                   src="../assets/wage_calculator.png"
@@ -290,6 +300,11 @@
                 id="bomberman-btn"
                 class="group relative col-start-4 col-end-6 cursor-pointer overflow-hidden rounded-xl bg-cube1"
               >
+                <h3
+                  class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
+                >
+                  Bomberman
+                </h3>
                 <img
                   class="absolute left-6 top-12 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
                   src="../assets/bomberman.png"
@@ -299,8 +314,14 @@
 
               <!-- THE CARTOGRAPHER -->
               <div
+                id="cartographer-btn"
                 class="group relative col-start-6 col-end-8 cursor-pointer overflow-hidden rounded-xl bg-cube1"
               >
+                <h3
+                  class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
+                >
+                  The Cartographer
+                </h3>
                 <img
                   class="absolute left-6 top-12 h-32 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
                   src="../assets/the_cartographer.png"
@@ -310,8 +331,14 @@
 
               <!-- JOBHUNTER -->
               <div
+                id="jobhunter-btn"
                 class="group relative col-start-1 col-end-6 cursor-pointer overflow-hidden rounded-xl bg-cube1"
               >
+                <h3
+                  class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
+                >
+                  Jobhunter
+                </h3>
                 <img
                   class="absolute left-6 top-12 h-32 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
                   src="../assets/jobhunter.png"
@@ -321,8 +348,14 @@
 
               <!-- PORTFOLIO PAGE-->
               <div
+                id="portfolio-btn"
                 class="group relative col-start-6 col-end-8 cursor-pointer overflow-hidden rounded-xl bg-cube1"
               >
+                <h3
+                  class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
+                >
+                  Portfolio Page
+                </h3>
                 <img
                   class="absolute left-6 top-12 h-32 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
                   src="../assets/portfolio-screen.png"
@@ -493,30 +526,129 @@
       id="overlay"
     ></div>
 
-    <!-- modals -->
-    <div
+    <!-- M O D A L S -->
+
+    <!-- arcade -->
+    <section
       id="arcade-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 p-4 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
     >
-      <button id="arcade-close" class="text-xl">close</button>
-      arcade modal
-    </div>
+      <div
+        id="arcade-content"
+        class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <button id="arcade-close" class="absolute right-0 top-0 text-xl">
+          X
+        </button>
+        <h3>Arcade game</h3>
+        <p>This is an arcade game made in Laravel</p>
+      </div>
+    </section>
 
-    <div
+    <!-- wage -->
+    <section
       id="wage-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 p-4 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
     >
-      <button id="wage-close" class="text-xl">close</button>
-      wage modal
-    </div>
+      <div
+        id="wage-content"
+        class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <button id="wage-close" class="absolute right-0 top-0 text-xl">
+          X
+        </button>
+        <h3>wage game</h3>
+        <p>This is an wage game made in Laravel</p>
+      </div>
+    </section>
 
-    <div
+    <!-- bomberman -->
+    <section
       id="bomberman-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 p-4 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+    >
+      <div
+        id="bomberman-content"
+        class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <button id="bomberman-close" class="absolute right-0 top-0 text-xl">
+          X
+        </button>
+        <h3>bomberman game</h3>
+        <p>This is an bomberman game made in Laravel</p>
+      </div>
+    </section>
+    <!-- cartographer -->
+    <section
+      id="cartographer-modal"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+    >
+      <div
+        id="cartographer-content"
+        class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <button id="cartographer-close" class="absolute right-0 top-0 text-xl">
+          X
+        </button>
+        <h3>cartographer game</h3>
+        <p>This is an cartographer game made in Laravel</p>
+      </div>
+    </section>
+
+    <!-- jobhunter -->
+    <section
+      id="jobhunter-modal"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+    >
+      <div
+        id="jobhunter-content"
+        class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <button id="jobhunter-close" class="absolute right-0 top-0 text-xl">
+          X
+        </button>
+        <h3>jobhunter game</h3>
+        <p>This is an jobhunter game made in Laravel</p>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section
+      id="portfolio-modal"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+    >
+      <div
+        id="portfolio-content"
+        class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <button id="portfolio-close" class="absolute right-0 top-0 text-xl">
+          X
+        </button>
+        <h3>portfolio game</h3>
+        <p>This is an portfolio game made in Laravel</p>
+      </div>
+    </section>
+
+    <!-- <section
+      id="wage-modal"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+    >
+      <div
+        id="wage-content"
+        class="text-base opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <button id="wage-close" class="text-xl">close</button>
+        wage modal
+      </div>
+    </section>
+
+    <section
+      id="bomberman-modal"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
     >
       <button id="bomberman-close" class="text-xl">close</button>
       bomberman modal
-    </div>
+    </section> -->
 
     <script src="move.js"></script>
     <!-- <script src="lan-switch.js"></script> -->
