@@ -152,7 +152,9 @@
 
             <div class="">
               <div class="mx-12">
-                <ol class="relative border-s-2 border-blue border-opacity-20">
+                <ol
+                  class="relative border-s-2 border-blue border-opacity-20 dark:border-light-blue"
+                >
                   <li class="mb-10 ms-4 pt-8">
                     <time class="mb-1 text-sm font-normal leading-none"
                       >September 2022 -
@@ -169,12 +171,29 @@
                       Ongoing computer science degree. <br />
                       (Expected graduation in May 2025)
                     </p>
-                    <!-- <a
-                      href="#"
-                      class="inline-flex items-center rounded-lg border border-blue px-4 py-2 text-sm font-medium focus:z-10 focus:outline-none focus:ring-4 dark:border-light-blue"
-                      >Learn more
+                  </li>
+                  <li class="mb-10 ms-4">
+                    <time class="mb-1 text-sm font-normal leading-none"
+                      >October 2023</time
+                    >
+                    <h3 class="text-lg font-semibold">
+                      <a
+                        class="underline"
+                        href="https://webdesigntanfolyam.com/"
+                        target="_blank"
+                        >Pixelgyár</a
+                      >
+                    </h3>
+                    <p class="mb-4 text-base font-normal leading-5">
+                      Completed the web design course of Pixelgyár.
+                    </p>
+                    <button
+                      id="show-image-btn"
+                      class="group inline-flex items-center rounded-lg border-[1px] border-blue px-4 py-2 text-sm font-medium focus:z-10 focus:outline-none focus:ring-4 dark:border-light-blue"
+                    >
+                      Certificate
                       <svg
-                        class="ms-2 h-3 w-3 rtl:rotate-180"
+                        class="ms-2 h-3 w-3 transition-all duration-300 ease-in-out group-hover:rotate-90"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -186,8 +205,20 @@
                           stroke-linejoin="round"
                           stroke-width="2"
                           d="M1 5h12m0 0L9 1m4 4L9 9"
-                        /></svg
-                    ></a> -->
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="image-container"
+                      class="hidden opacity-0 transition-opacity duration-500"
+                    >
+                      <img
+                        id="my-image"
+                        src="../assets/certificate.jpg"
+                        alt="Placeholder Image"
+                        class="ml-4 mt-8 rounded shadow-lg"
+                      />
+                    </div>
                   </li>
                   <li class="mb-10 ms-4">
                     <time class="mb-1 text-sm font-normal leading-none"
@@ -320,7 +351,7 @@
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
                 >
-                  The Cartographer
+                  Cartographer
                 </h3>
                 <img
                   class="absolute left-6 top-12 h-32 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
@@ -354,7 +385,7 @@
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
                 >
-                  Portfolio Page
+                  Portfolio
                 </h3>
                 <img
                   class="absolute left-6 top-12 h-32 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out group-hover:-translate-y-4"
@@ -377,7 +408,7 @@
 
           <secton class="card glass relative">
             <div id="contact" class="absolute -top-12 left-0"></div>
-            <div class="mx-4 mb-20 mt-20">
+            <div class="my-12 ml-8">
               <h1 class="h-text mb-8 text-center">
                 Want to tell us something?
               </h1>
@@ -429,7 +460,7 @@
                     >
                   </div>
                 </div>
-                <div class="group relative z-0 mb-5 w-full">
+                <div class="group relative z-0 mb-12 w-full">
                   <input
                     type="tel"
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -446,7 +477,7 @@
                   >
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-8">
                   <label for="message" class="0 mb-2 block text-sm"
                     >Message</label
                   >
@@ -479,7 +510,7 @@
         </div>
       </div>
       <div
-        class="glass fixed left-4 top-4 w-12 rounded-full lg:left-1/2 lg:top-[3rem] lg:translate-x-[26rem]"
+        class="glass fixed right-4 top-4 w-12 rounded-full lg:left-1/2 lg:top-[3rem] lg:translate-x-[26rem]"
       >
         <div class="flex justify-center">
           <button
@@ -504,7 +535,7 @@
         </div>
       </div>
       <div
-        class="glass fixed left-4 top-32 h-36 w-12 rounded-full lg:left-1/2 lg:top-[24rem] lg:translate-x-[26rem]"
+        class="glass fixed right-4 top-32 h-36 w-12 rounded-full lg:left-1/2 lg:top-[24rem] lg:translate-x-[26rem]"
       >
         <img
           class="mx-auto mt-2 w-8"
@@ -531,7 +562,7 @@
     <!-- arcade -->
     <section
       id="arcade-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="arcade-content"
@@ -548,7 +579,7 @@
     <!-- wage -->
     <section
       id="wage-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="wage-content"
@@ -565,7 +596,7 @@
     <!-- bomberman -->
     <section
       id="bomberman-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="bomberman-content"
@@ -581,24 +612,86 @@
     <!-- cartographer -->
     <section
       id="cartographer-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="cartographer-content"
         class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
       >
-        <button id="cartographer-close" class="absolute right-0 top-0 text-xl">
-          X
-        </button>
-        <h3>cartographer game</h3>
-        <p>This is an cartographer game made in Laravel</p>
+        <div class="sticky top-0 flex justify-end">
+          <button id="cartographer-close" class="text-xl">
+            <img
+              class="z-30 w-8 translate-x-8"
+              src="../assets/close.svg"
+              alt="icon of the closing button"
+            />
+          </button>
+        </div>
+        <a
+          href="https://github.com/vtmate/a_terkepesz"
+          target="_blank"
+          class="rounded-md border-2 border-blue px-2"
+        >
+          Visit on github
+        </a>
+        <h3 class="mt-2 text-2xl">
+          The Cartographer - JavaScript Game Project
+        </h3>
+        <h4 class="mt-4 text-xl">Description:</h4>
+        <p>
+          The Cartographer is one of my first significant projects, developed
+          entirely in JavaScript. This project showcases my solid understanding
+          of JavaScript fundamentals. Although it doesn't incorporate any
+          advanced features, it demonstrates my ability to handle basic game
+          logic, DOM manipulation, and user interaction.
+        </p>
+        <div class="relative">
+          <img
+            class="z-0 my-4 w-full rounded-xl"
+            src="../assets/a_terkepesz_full.png"
+            alt="the cartographer gameboard"
+          />
+          <a
+            class="absolute bottom-4 right-4 rounded-md bg-blue-tr px-4 py-2"
+            href="https://vtmate.github.io/a_terkepesz/"
+            target="_blank"
+            >Try it</a
+          >
+        </div>
+
+        <h4 class="mt-4 text-xl">Key Features:</h4>
+
+        <p>
+          Game Mechanics: Developed a single-player game with a 11x11 grid map
+          where players place various terrain elements. Randomization:
+          Implemented random selection of map elements and mission cards. Time
+          Management: Created a system to track game duration and seasons.
+          Scoring System: Designed a scoring mechanism based on mission
+          objectives and map element placement. User Interface: Built a simple
+          but functional UI for placing map elements and tracking game progress.
+          The game rules are found on <a class="underline" href="">my github</a>
+        </p>
+
+        <h4 class="mt-4 text-xl">Technologies Used:</h4>
+
+        <ul>
+          <li class="ml-8 list-disc">JavaScript</li>
+          <li class="ml-8 list-disc">HTML</li>
+          <li class="ml-8 list-disc">CSS</li>
+        </ul>
+
+        <p class="mb-4">
+          This project underscores my proficiency in JavaScript and my ability
+          to build interactive applications from scratch. While it's a basic
+          game, it laid a strong foundation for my future development work.
+        </p>
       </div>
     </section>
 
     <!-- jobhunter -->
     <section
       id="jobhunter-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="jobhunter-content"
@@ -615,7 +708,7 @@
     <!-- portfolio -->
     <section
       id="portfolio-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="portfolio-content"
@@ -631,7 +724,7 @@
 
     <!-- <section
       id="wage-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden w-11/12 max-w-[48rem] h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="wage-content"
@@ -644,7 +737,7 @@
 
     <section
       id="bomberman-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
+      class="fixed left-1/2 top-1/2 z-10 hidden w-11/12 max-w-[48rem] h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
     >
       <button id="bomberman-close" class="text-xl">close</button>
       bomberman modal
