@@ -295,7 +295,7 @@
               <!-- ARCADE GAME -->
               <div
                 id="arcade-btn"
-                class="group relative col-start-1 col-end-4 row-start-1 row-end-3 cursor-pointer overflow-hidden rounded-xl bg-cube4"
+                class="group relative col-start-1 col-end-4 row-start-1 row-end-3 cursor-pointer overflow-hidden rounded-xl bg-P-red"
               >
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
@@ -329,7 +329,7 @@
               <!-- BOMBERMAN -->
               <div
                 id="bomberman-btn"
-                class="group relative col-start-4 col-end-6 cursor-pointer overflow-hidden rounded-xl bg-cube1"
+                class="group relative col-start-4 col-end-6 cursor-pointer overflow-hidden rounded-xl bg-p-green"
               >
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
@@ -346,7 +346,7 @@
               <!-- THE CARTOGRAPHER -->
               <div
                 id="cartographer-btn"
-                class="group relative col-start-6 col-end-8 cursor-pointer overflow-hidden rounded-xl bg-cube1"
+                class="group relative col-start-6 col-end-8 cursor-pointer overflow-hidden rounded-xl bg-p-yellow"
               >
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
@@ -363,7 +363,7 @@
               <!-- JOBHUNTER -->
               <div
                 id="jobhunter-btn"
-                class="group relative col-start-1 col-end-6 cursor-pointer overflow-hidden rounded-xl bg-cube1"
+                class="group relative col-start-1 col-end-6 cursor-pointer overflow-hidden rounded-xl bg-p-purple"
               >
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
@@ -380,7 +380,7 @@
               <!-- PORTFOLIO PAGE-->
               <div
                 id="portfolio-btn"
-                class="group relative col-start-6 col-end-8 cursor-pointer overflow-hidden rounded-xl bg-cube1"
+                class="group relative col-start-6 col-end-8 cursor-pointer overflow-hidden rounded-xl bg-P-blue"
               >
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
@@ -576,20 +576,86 @@
       </div>
     </section>
 
-    <!-- wage -->
+    <!-- wage calculator-->
     <section
       id="wage-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="wage-content"
         class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
       >
-        <button id="wage-close" class="absolute right-0 top-0 text-xl">
-          X
-        </button>
-        <h3>wage game</h3>
-        <p>This is an wage game made in Laravel</p>
+        <div class="sticky top-0 flex justify-end">
+          <button id="wage-close" class="text-xl">
+            <img
+              class="z-30 w-8 translate-x-8"
+              src="../assets/close.svg"
+              alt="icon of the closing button"
+            />
+          </button>
+        </div>
+        <a
+          href="https://github.com/vtmate/wage_calculator"
+          target="_blank"
+          class="rounded-md border-2 border-blue px-2"
+        >
+          Visit on github
+        </a>
+        <h3 class="mt-2 text-2xl">Wage Calculator - React Project</h3>
+        <h4 class="mt-4 text-xl">Description:</h4>
+        <p>
+          The goal of the Salary Calculator project was to create a web
+          application that allows users to calculate their net income based on
+          their monthly gross salary. The application takes into account various
+          tax deductions and provides an option to aggregate the incomes of
+          multiple household members.
+        </p>
+        <div class="relative">
+          <img
+            class="z-0 my-4 w-full rounded-xl"
+            src="../assets/wage_calculator_full.png"
+            alt="the cartographer gameboard"
+          />
+        </div>
+
+        <h4 class="mt-4 text-xl">Key Features:</h4>
+
+        <ul>
+          <li class="ml-8 list-disc">
+            Gross-Net Salary Calculation: Automatically calculates net salary
+            based on the provided gross salary.
+          </li>
+          <li class="ml-8 list-disc">
+            Tax Deductions Management: Users can activate various tax deductions
+            such as the under 25 SZJA deduction, personal tax deduction, first
+            marriage deduction, and dependents' deductions.
+          </li>
+          <li class="ml-8 list-disc">
+            Household Net Income: Allows users to input multiple household
+            members' incomes and calculate the total net income for the
+            household.
+          </li>
+        </ul>
+
+        <h4 class="mt-4 text-xl">Technologies:</h4>
+
+        <ul>
+          <li class="ml-8 list-disc">
+            React: During this project, I gained a deep understanding of the
+            React framework, enabling dynamic user interface management.
+          </li>
+          <li class="ml-8 list-disc">
+            TypeScript: I improved my TypeScript skills, which helped in writing
+            type-safe code and reducing errors.
+          </li>
+        </ul>
+        <h4 class="mt-4 text-xl">Learnings:</h4>
+
+        <p class="mb-4">
+          This project underscores my proficiency in JavaScript and my ability
+          to build interactive applications from scratch. While it's a basic
+          game, it laid a strong foundation for my future development work.
+        </p>
       </div>
     </section>
 
@@ -652,7 +718,7 @@
             alt="the cartographer gameboard"
           />
           <a
-            class="absolute bottom-4 right-4 rounded-md bg-blue-tr px-4 py-2"
+            class="absolute bottom-4 right-4 rounded-md border-2 border-light-blue bg-blue px-4 py-2 text-light-blue"
             href="https://vtmate.github.io/a_terkepesz/"
             target="_blank"
             >Try it</a
@@ -691,60 +757,149 @@
     <!-- jobhunter -->
     <section
       id="jobhunter-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="jobhunter-content"
         class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
       >
-        <button id="jobhunter-close" class="absolute right-0 top-0 text-xl">
-          X
-        </button>
-        <h3>jobhunter game</h3>
-        <p>This is an jobhunter game made in Laravel</p>
+        <div class="sticky top-0 flex justify-end">
+          <button id="jobhunter-close" class="text-xl">
+            <img
+              class="z-30 w-8 translate-x-8"
+              src="../assets/close.svg"
+              alt="icon of the closing button"
+            />
+          </button>
+        </div>
+        <a
+          href="https://github.com/vtmate/jobhunter"
+          target="_blank"
+          class="rounded-md border-2 border-blue px-2"
+        >
+          Visit on github
+        </a>
+        <h3 class="mt-2 text-2xl">The jobhunter - JavaScript Game Project</h3>
+        <h4 class="mt-4 text-xl">Description:</h4>
+        <p>
+          The jobhunter is one of my first significant projects, developed
+          entirely in JavaScript. This project showcases my solid understanding
+          of JavaScript fundamentals. Although it doesn't incorporate any
+          advanced features, it demonstrates my ability to handle basic game
+          logic, DOM manipulation, and user interaction. POSTMAN
+          ISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+        </p>
+        <div class="relative">
+          <img
+            class="z-0 my-4 w-full rounded-xl"
+            src="../assets/jobhunter_full.png"
+            alt="the jobhunter gameboard"
+          />
+        </div>
+
+        <h4 class="mt-4 text-xl">Key Features:</h4>
+
+        <p>
+          Game Mechanics: Developed a single-player game with a 11x11 grid map
+          where players place various terrain elements. Randomization:
+          Implemented random selection of map elements and mission cards. Time
+          Management: Created a system to track game duration and seasons.
+          Scoring System: Designed a scoring mechanism based on mission
+          objectives and map element placement. User Interface: Built a simple
+          but functional UI for placing map elements and tracking game progress.
+          The game rules are found on <a class="underline" href="">my github</a>
+        </p>
+
+        <h4 class="mt-4 text-xl">Technologies Used:</h4>
+
+        <ul>
+          <li class="ml-8 list-disc">JavaScript</li>
+          <li class="ml-8 list-disc">HTML</li>
+          <li class="ml-8 list-disc">CSS</li>
+        </ul>
+
+        <p class="mb-4">
+          This project underscores my proficiency in JavaScript and my ability
+          to build interactive applications from scratch. While it's a basic
+          game, it laid a strong foundation for my future development work.
+        </p>
       </div>
     </section>
 
     <!-- portfolio -->
     <section
       id="portfolio-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="portfolio-content"
         class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
       >
-        <button id="portfolio-close" class="absolute right-0 top-0 text-xl">
-          X
-        </button>
-        <h3>portfolio game</h3>
-        <p>This is an portfolio game made in Laravel</p>
+        <div class="sticky top-0 flex justify-end">
+          <button id="portfolio-close" class="text-xl">
+            <img
+              class="z-30 w-8 translate-x-8"
+              src="../assets/close.svg"
+              alt="icon of the closing button"
+            />
+          </button>
+        </div>
+        <a
+          href="https://github.com/vtmate/portfolio"
+          target="_blank"
+          class="rounded-md border-2 border-blue px-2"
+        >
+          Visit on github
+        </a>
+        <h3 class="mt-2 text-2xl">The portfolio - JavaScript Game Project</h3>
+        <h4 class="mt-4 text-xl">Description:</h4>
+        <p>
+          The portfolio is one of my first significant projects, developed
+          entirely in JavaScript. This project showcases my solid understanding
+          of JavaScript fundamentals. Although it doesn't incorporate any
+          advanced features, it demonstrates my ability to handle basic game
+          logic, DOM manipulation, and user interaction. POSTMAN
+          ISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+        </p>
+        <div>
+          <img
+            class="z-0 my-4 w-full rounded-xl"
+            src="../assets/portfolio_full.png"
+            alt="the portfolio gameboard"
+          />
+        </div>
+
+        <h4 class="mt-4 text-xl">Key Features:</h4>
+
+        <p>
+          Game Mechanics: Developed a single-player game with a 11x11 grid map
+          where players place various terrain elements. Randomization:
+          Implemented random selection of map elements and mission cards. Time
+          Management: Created a system to track game duration and seasons.
+          Scoring System: Designed a scoring mechanism based on mission
+          objectives and map element placement. User Interface: Built a simple
+          but functional UI for placing map elements and tracking game progress.
+          The game rules are found on <a class="underline" href="">my github</a>
+        </p>
+
+        <h4 class="mt-4 text-xl">Technologies Used:</h4>
+
+        <ul>
+          <li class="ml-8 list-disc">JavaScript</li>
+          <li class="ml-8 list-disc">HTML</li>
+          <li class="ml-8 list-disc">CSS</li>
+        </ul>
+
+        <p class="mb-4">
+          This project underscores my proficiency in JavaScript and my ability
+          to build interactive applications from scratch. While it's a basic
+          game, it laid a strong foundation for my future development work.
+        </p>
       </div>
     </section>
-
-    <!-- <section
-      id="wage-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden w-11/12 max-w-[48rem] h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
-    >
-      <div
-        id="wage-content"
-        class="text-base opacity-0 transition-all duration-500 ease-in-out"
-      >
-        <button id="wage-close" class="text-xl">close</button>
-        wage modal
-      </div>
-    </section>
-
-    <section
-      id="bomberman-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden w-11/12 max-w-[48rem] h-0 -translate-x-1/2 -translate-y-1/2 bg-cube5 transition-all duration-500 ease-in-out"
-    >
-      <button id="bomberman-close" class="text-xl">close</button>
-      bomberman modal
-    </section> -->
 
     <script src="move.js"></script>
-    <!-- <script src="lan-switch.js"></script> -->
+    <script src="lan-switch.js"></script>
     <script src="theme-switch.js"></script>
     <script src="app.js"></script>
   </body>
