@@ -670,10 +670,6 @@ video {
   top: -3rem;
 }
 
-.bottom-4{
-  bottom: 1rem;
-}
-
 .left-0{
   left: 0px;
 }
@@ -1095,6 +1091,22 @@ video {
   width: 100%;
 }
 
+.w-96{
+  width: 24rem;
+}
+
+.w-\[24rem\]{
+  width: 24rem;
+}
+
+.w-\[23rem\]{
+  width: 23rem;
+}
+
+.min-w-8{
+  min-width: 2rem;
+}
+
 .max-w-\[33rem\]{
   max-width: 33rem;
 }
@@ -1509,6 +1521,10 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all{

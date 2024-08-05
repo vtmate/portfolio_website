@@ -274,11 +274,14 @@
           </secton>
           <secton class="card glass relative">
             <div id="skills" class="absolute -top-12 left-0"></div>
-            <img
-              class="m-auto w-3/5"
-              src="../assets/stack-map.png"
-              alt="programming languages and tools I use"
-            />
+            <div class="w-full">
+              <p>ja meg magabiztosan beszélek angolul is</p>
+              <img
+                class="mx-auto my-4 w-[23rem]"
+                src="../assets/stack-map.png"
+                alt="programming languages and tools I use"
+              />
+            </div>
             <h2 class="vertical mr-2 text-center">
               S <br />
               K <br />
@@ -287,7 +290,6 @@
               L <br />
               S
             </h2>
-            <p>ja meg magabiztosan beszélek angolul is</p>
           </secton>
           <secton class="card glass relative">
             <div id="projects" class="absolute -top-12 left-0"></div>
@@ -563,17 +565,83 @@
     <!-- arcade -->
     <section
       id="arcade-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="arcade-content"
         class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
       >
-        <button id="arcade-close" class="absolute right-0 top-0 text-xl">
-          X
-        </button>
-        <h3>Arcade game</h3>
-        <p>This is an arcade game made in Laravel</p>
+        <div class="sticky top-0 flex justify-end">
+          <button id="arcade-close" class="text-xl">
+            <img
+              class="z-30 w-8 translate-x-8"
+              src="../assets/close.svg"
+              alt="icon of the closing button"
+            />
+          </button>
+        </div>
+        <a
+          href="https://github.com/vtmate/arcade_game"
+          target="_blank"
+          class="rounded-md border-2 border-blue px-2"
+        >
+          Visit on github
+        </a>
+        <h3 class="mt-8 text-2xl">The arcade - Laravel Game Project</h3>
+        <p>
+          In this project, I developed a single-player, turn-based arcade combat
+          game using the Laravel framework. The goal was to create an engaging
+          game while adhering to specific requirements.
+        </p>
+        <div class="relative">
+          <img
+            class="z-0 my-4 w-full rounded-xl"
+            src="../assets/arcade_game_places.png"
+            alt="site where you can manage the locations"
+          />
+        </div>
+
+        <h4 class="mt-4 text-xl">Key Features:</h4>
+
+        <ul>
+          <li class="ml-8 list-disc">
+            User Registration & Management: Users can register, manage their
+            profiles, and handle characters.
+          </li>
+          <li class="ml-8 list-disc">
+            Admin Controls: Admins can manage locations, including creating,
+            editing, and deleting entries.
+          </li>
+          <li class="ml-8 list-disc">
+            File Management: Enabled image uploads for game locations.
+          </li>
+          <li class="ml-8 list-disc">
+            Game Logic: Developed core turn-based combat mechanics, including
+            various attack types and health management.
+          </li>
+        </ul>
+
+        <img
+          class="z-0 my-4 w-full rounded-xl"
+          src="../assets/arcade_game_battle.png"
+          alt="site of the arcade match"
+        />
+
+        <div class="mt-4 flex rounded-xl bg-blue-tr p-2">
+          <div class="mr-2">
+            <img
+              class="w-8 min-w-8"
+              src="../assets/graduation.svg"
+              alt="graduation hat"
+            />
+          </div>
+          <div>
+            This project enhanced my understanding of Laravel, game logic
+            implementation, user registration, file management, and managing a
+            full-stack project independently, from database management to user
+            interface design.
+          </div>
+        </div>
       </div>
     </section>
 
@@ -602,20 +670,18 @@
         >
           Visit on github
         </a>
-        <h3 class="mt-2 text-2xl">Wage Calculator - React Project</h3>
-        <h4 class="mt-4 text-xl">Description:</h4>
+        <h3 class="mt-8 text-2xl">Wage Calculator - React Project</h3>
         <p>
-          The goal of the Salary Calculator project was to create a web
-          application that allows users to calculate their net income based on
-          their monthly gross salary. The application takes into account various
-          tax deductions and provides an option to aggregate the incomes of
-          multiple household members.
+          Here the goal was to create a web application that allows users to
+          calculate their net income based on their monthly gross salary. The
+          application takes into account various tax deductions and provides an
+          option to aggregate the incomes of multiple household members.
         </p>
         <div class="relative">
           <img
             class="z-0 my-4 w-full rounded-xl"
             src="../assets/wage_calculator_full.png"
-            alt="the cartographer gameboard"
+            alt="the wage calculator showing a person's datas"
           />
         </div>
 
@@ -638,44 +704,104 @@
           </li>
         </ul>
 
-        <h4 class="mt-4 text-xl">Technologies:</h4>
-
-        <ul>
-          <li class="ml-8 list-disc">
-            React: During this project, I gained a deep understanding of the
-            React framework, enabling dynamic user interface management.
-          </li>
-          <li class="ml-8 list-disc">
-            TypeScript: I improved my TypeScript skills, which helped in writing
-            type-safe code and reducing errors.
-          </li>
-        </ul>
-        <h4 class="mt-4 text-xl">Learnings:</h4>
-
-        <p class="mb-4">
-          This project underscores my proficiency in JavaScript and my ability
-          to build interactive applications from scratch. While it's a basic
-          game, it laid a strong foundation for my future development work.
-        </p>
+        <div class="mt-4 flex rounded-xl bg-blue-tr p-2">
+          <div class="mr-2">
+            <img
+              class="w-8 min-w-8"
+              src="../assets/graduation.svg"
+              alt="graduation hat"
+            />
+          </div>
+          <div>
+            I learned the essential fundamentals of React, and so I have a clear
+            understanding of its core concepts.
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- bomberman -->
+    <!-- bomberman-->
     <section
       id="bomberman-modal"
-      class="fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube5 transition-all duration-500 ease-in-out"
     >
       <div
         id="bomberman-content"
         class="relative text-base opacity-0 transition-all duration-500 ease-in-out"
       >
-        <button id="bomberman-close" class="absolute right-0 top-0 text-xl">
-          X
-        </button>
-        <h3>bomberman game</h3>
-        <p>This is an bomberman game made in Laravel</p>
+        <div class="sticky top-0 flex justify-end">
+          <button id="bomberman-close" class="text-xl">
+            <img
+              class="z-30 w-8 translate-x-8"
+              src="../assets/close.svg"
+              alt="icon of the closing button"
+            />
+          </button>
+        </div>
+        <a
+          href="https://github.com/vtmate/bomberman"
+          target="_blank"
+          class="rounded-md border-2 border-blue px-2"
+        >
+          Visit on github
+        </a>
+        <h3 class="mt-8 text-2xl">Bomberman - Java Project</h3>
+        <p>
+          As part of a class project, my teammates and I developed a Bomberman
+          game in Java. The game features a main menu, a playground selection
+          screen, and the game arena itself. Players can move, evade zombies,
+          place bombs, collect power-ups, and defeat enemies. Additionally, the
+          game includes a battle royale mode.
+        </p>
+        <div class="relative">
+          <img
+            class="z-0 my-4 w-full rounded-xl"
+            src="../assets/bomberman_full.png"
+            alt="page where you can choose from the playgrounds"
+          />
+        </div>
+
+        <h4 class="mt-4 text-xl">Key Features:</h4>
+
+        <ul>
+          <li class="ml-8 list-disc">
+            Main Page: Entry point with options to navigate to different
+            sections.
+          </li>
+          <li class="ml-8 list-disc">
+            Playground Selection: Choose from various playgrounds to play on.
+          </li>
+          <li class="ml-8 list-disc">
+            Game Mechanics: Move around the playground, avoid zombies, place
+            bombs, and collect power-ups.
+          </li>
+          <li class="ml-8 list-disc">
+            Battle Royale Mode: A competitive mode where players fight to be the
+            last one standing.
+          </li>
+          <li class="ml-8 list-disc">
+            Multiplayer Functionality: Engage in battles with other players in
+            real-time.
+          </li>
+        </ul>
+
+        <div class="mt-4 flex rounded-xl bg-blue-tr p-2">
+          <div class="mr-2">
+            <img
+              class="w-8 min-w-8"
+              src="../assets/graduation.svg"
+              alt="graduation hat"
+            />
+          </div>
+          <div>
+            This project enhanced my understanding of game logic in Java and GUI
+            development with JavaFX. It also provided valuable experience in
+            teamwork and version control using Git and GitLab.
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- cartographer -->
     <section
       id="cartographer-modal"
@@ -701,17 +827,35 @@
         >
           Visit on github
         </a>
-        <h3 class="mt-2 text-2xl">
+        <h3 class="mt-8 text-2xl">
           The Cartographer - JavaScript Game Project
         </h3>
-        <h4 class="mt-4 text-xl">Description:</h4>
         <p>
           The Cartographer is one of my first significant projects, developed
           entirely in JavaScript. This project showcases my solid understanding
           of JavaScript fundamentals. Although it doesn't incorporate any
           advanced features, it demonstrates my ability to handle basic game
           logic, DOM manipulation, and user interaction.
+          <br />- The game rules are found on
+          <a
+            target="_blank"
+            class="underline"
+            href="https://github.com/vtmate/a_terkepesz"
+            >my github</a
+          >
         </p>
+        <!-- The Cartographer - JavaScript játék projekt
+
+Leírás:
+A Cartographer az egyik első nagyobb projektem, amit teljes egészében JavaScript-ben készítettem. Ez a projekt jól mutatja, hogy mennyire értem a JavaScript alapjait. Bár nincs benne semmi különlegesen fejlett funkció, remekül szemlélteti, hogy hogyan kezelem az alapvető játéklogikát, a DOM manipulációt és a felhasználói interakciókat.
+
+A játékszabályok a GitHub oldalamon találhatók.
+Főbb jellemzők:
+Játékmenet: Egy egyjátékos játék, ahol egy 11x11-es rácsos térképen különböző terepelemeket helyezhetsz el.
+Véletlenszerűség: Térképelemek és küldetéskártyák véletlenszerű kiválasztása.
+Időkezelés: Egy rendszer, amely nyomon követi a játék időtartamát és az évszakokat.
+Pontozási rendszer: Egy pontozási mechanizmus, amely a küldetések céljain és a térképelemek elhelyezésén alapul.
+Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a térképelemek elhelyezését és a játék előrehaladásának nyomon követését. -->
         <div class="relative">
           <img
             class="z-0 my-4 w-full rounded-xl"
@@ -719,7 +863,7 @@
             alt="the cartographer gameboard"
           />
           <a
-            class="absolute bottom-4 right-4 rounded-md border-2 border-light-blue bg-blue px-4 py-2 text-light-blue"
+            class="absolute right-4 top-4 rounded-md border-2 border-light-blue bg-blue px-4 py-2 text-light-blue"
             href="https://vtmate.github.io/a_terkepesz/"
             target="_blank"
             >Try it</a
@@ -728,30 +872,28 @@
 
         <h4 class="mt-4 text-xl">Key Features:</h4>
 
-        <p>
-          Game Mechanics: Developed a single-player game with a 11x11 grid map
-          where players place various terrain elements. Randomization:
-          Implemented random selection of map elements and mission cards. Time
-          Management: Created a system to track game duration and seasons.
-          Scoring System: Designed a scoring mechanism based on mission
-          objectives and map element placement. User Interface: Built a simple
-          but functional UI for placing map elements and tracking game progress.
-          The game rules are found on <a class="underline" href="">my github</a>
-        </p>
-
-        <h4 class="mt-4 text-xl">Technologies Used:</h4>
-
         <ul>
-          <li class="ml-8 list-disc">JavaScript</li>
-          <li class="ml-8 list-disc">HTML</li>
-          <li class="ml-8 list-disc">CSS</li>
+          <li class="ml-8 list-disc">
+            Game Mechanics: Developed a single-player game with a 11x11 grid map
+            where players place various terrain elements.
+          </li>
+          <li class="ml-8 list-disc">
+            Randomization: Implemented random selection of map elements and
+            mission cards.
+          </li>
+          <li class="ml-8 list-disc">
+            Time Management: Created a system to track game duration and
+            seasons.
+          </li>
+          <li class="ml-8 list-disc">
+            Scoring System: Designed a scoring mechanism based on mission
+            objectives and map element placement.
+          </li>
+          <li class="ml-8 list-disc">
+            User Interface: Built a simple but functional UI for placing map
+            elements and tracking game progress.
+          </li>
         </ul>
-
-        <p class="mb-4">
-          This project underscores my proficiency in JavaScript and my ability
-          to build interactive applications from scratch. While it's a basic
-          game, it laid a strong foundation for my future development work.
-        </p>
       </div>
     </section>
 
@@ -780,56 +922,63 @@
         >
           Visit on github
         </a>
-        <h3 class="mt-2 text-2xl">The jobhunter - JavaScript Game Project</h3>
-        <h4 class="mt-4 text-xl">Description:</h4>
+        <h3 class="mt-8 text-2xl">The Jobhunter - Redux Project</h3>
         <p>
-          The jobhunter is one of my first significant projects, developed
-          entirely in JavaScript. This project showcases my solid understanding
-          of JavaScript fundamentals. Although it doesn't incorporate any
-          advanced features, it demonstrates my ability to handle basic game
-          logic, DOM manipulation, and user interaction. POSTMAN
-          ISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+          The goal of the Jobhunter project was to create a job search website
+          that helps users find jobs and allows employers to post job listings.
+          The application supports two types of user roles: job seekers and
+          employers, each with different functionalities.
         </p>
         <div class="relative">
           <img
             class="z-0 my-4 w-full rounded-xl"
             src="../assets/jobhunter_full.png"
-            alt="the jobhunter gameboard"
+            alt="jobhunter search"
           />
         </div>
 
         <h4 class="mt-4 text-xl">Key Features:</h4>
 
-        <p>
-          Game Mechanics: Developed a single-player game with a 11x11 grid map
-          where players place various terrain elements. Randomization:
-          Implemented random selection of map elements and mission cards. Time
-          Management: Created a system to track game duration and seasons.
-          Scoring System: Designed a scoring mechanism based on mission
-          objectives and map element placement. User Interface: Built a simple
-          but functional UI for placing map elements and tracking game progress.
-          The game rules are found on <a class="underline" href="">my github</a>
-        </p>
+        <ul>
+          <li class="ml-8 list-disc">
+            User Registration: Users can register as either job seekers or
+            employers.
+          </li>
+          <li class="ml-8 list-disc">
+            Job Listings Browsing and Filtering: Users can browse and filter job
+            listings.
+          </li>
+          <li class="ml-8 list-disc">
+            Profile Management: Employers can manage their posted job listings.
+          </li>
+          <li class="ml-8 list-disc">
+            Job Posting and Application: Employers can add new job listings, and
+            job seekers can apply for job postings.
+          </li>
+          <li class="ml-8 list-disc">
+            (Back-end: I got the code with the school project, it is not mine)
+          </li>
+        </ul>
 
-        <!-- <video width="320" height="240" controls> -->
         <video controls class="my-4 w-full rounded-xl">
           <source src="../assets/jobhunter_filter.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <h4 class="mt-4 text-xl">Technologies Used:</h4>
-
-        <ul>
-          <li class="ml-8 list-disc">JavaScript</li>
-          <li class="ml-8 list-disc">HTML</li>
-          <li class="ml-8 list-disc">CSS</li>
-        </ul>
-
-        <p class="mb-4">
-          This project underscores my proficiency in JavaScript and my ability
-          to build interactive applications from scratch. While it's a basic
-          game, it laid a strong foundation for my future development work.
-        </p>
+        <div class="flex rounded-xl bg-blue-tr p-2">
+          <div class="mr-2">
+            <img
+              class="w-8 min-w-8"
+              src="../assets/graduation.svg"
+              alt="graduation hat"
+            />
+          </div>
+          <div>
+            This project solidified my understanding of React, Redux, and RTK
+            Query, while also providing hands-on experience with Postman and
+            modern web development practices.
+          </div>
+        </div>
       </div>
     </section>
 
@@ -858,50 +1007,44 @@
         >
           Visit on github
         </a>
-        <h3 class="mt-2 text-2xl">The portfolio - JavaScript Game Project</h3>
-        <h4 class="mt-4 text-xl">Description:</h4>
+        <h3 class="mt-8 text-2xl">Portfolio Website</h3>
         <p>
-          The portfolio is one of my first significant projects, developed
-          entirely in JavaScript. This project showcases my solid understanding
-          of JavaScript fundamentals. Although it doesn't incorporate any
-          advanced features, it demonstrates my ability to handle basic game
-          logic, DOM manipulation, and user interaction. POSTMAN
-          ISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+          I developed my portfolio website from scratch using HTML, CSS
+          (Tailwind), and JavaScript. I wanted to showcase my strong grasp of
+          web development fundamentals and my attention to design and user
+          experience.
         </p>
         <div>
           <img
             class="z-0 my-4 w-full rounded-xl"
             src="../assets/portfolio_full.png"
-            alt="the portfolio gameboard"
+            alt="heading of the porfolio"
           />
         </div>
 
         <h4 class="mt-4 text-xl">Key Features:</h4>
 
-        <p>
-          Game Mechanics: Developed a single-player game with a 11x11 grid map
-          where players place various terrain elements. Randomization:
-          Implemented random selection of map elements and mission cards. Time
-          Management: Created a system to track game duration and seasons.
-          Scoring System: Designed a scoring mechanism based on mission
-          objectives and map element placement. User Interface: Built a simple
-          but functional UI for placing map elements and tracking game progress.
-          The game rules are found on <a class="underline" href="">my github</a>
-        </p>
-
-        <h4 class="mt-4 text-xl">Technologies Used:</h4>
-
         <ul>
-          <li class="ml-8 list-disc">JavaScript</li>
-          <li class="ml-8 list-disc">HTML</li>
-          <li class="ml-8 list-disc">CSS</li>
+          <li class="ml-8 list-disc">
+            HTML & Semantic Structure: Ensures well-structured, accessible
+            content.
+          </li>
+          <li class="ml-8 list-disc">
+            CSS with Tailwind: Utilized Tailwind CSS for a responsive, modern
+            design.
+          </li>
+          <li class="ml-8 list-disc">
+            JavaScript Interactivity: Implemented bilingual support, dark theme
+            switcher, and modals.
+          </li>
+          <li class="ml-8 list-disc">
+            Responsive Design: Optimized for various devices and screen sizes.
+          </li>
+          <li class="ml-8 list-disc">
+            Design Aesthetics: Combined modern principles with a clean,
+            minimalistic layout.
+          </li>
         </ul>
-
-        <p class="mb-4">
-          This project underscores my proficiency in JavaScript and my ability
-          to build interactive applications from scratch. While it's a basic
-          game, it laid a strong foundation for my future development work.
-        </p>
       </div>
     </section>
 
