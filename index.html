@@ -366,7 +366,7 @@
               <!-- JOBHUNTER -->
               <div
                 id="jobhunter-btn"
-                class="bg-cube6 group relative col-start-1 col-end-6 cursor-pointer overflow-hidden rounded-xl text-light-blue"
+                class="group relative col-start-1 col-end-6 cursor-pointer overflow-hidden rounded-xl bg-cube6 text-light-blue"
               >
                 <h3
                   class="translate-y-10 text-center font-bold opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-2 group-hover:opacity-100"
@@ -409,7 +409,7 @@
             </h2>
           </secton>
 
-          <secton class="card glass relative">
+          <secton class="card glass relative mb-[3.5rem]">
             <div id="contact" class="absolute -top-12 left-0"></div>
             <div class="my-12 ml-8">
               <h1 class="h-text mb-8 text-center">
@@ -494,7 +494,7 @@
 
                 <button
                   type="submit"
-                  class="text-white focus:ring-blue-300 dar-700ue-800 w-full rounded-lg bg-[#a6c1ee] px-5 py-2.5 text-center text-sm font-medium hover:bg-[#87acec] focus:outline-none focus:ring-4 sm:w-auto"
+                  class="text-white focus:ring-blue-300 dar-700ue-800 w-full rounded-lg bg-cube1 px-5 py-2.5 text-center text-sm font-medium text-light-blue transition-colors duration-300 ease-in-out hover:bg-cube2 focus:outline-none focus:ring-4 sm:w-auto"
                 >
                   Submit
                 </button>
@@ -519,18 +519,20 @@
           <button
             class="sun mt-1 h-10 w-10 rounded-full border-light-blue bg-cube1 transition-all duration-150 hover:border-4"
           >
-            &#9790;
+            <!-- &#9790; -->
+            <img src="assets/moon.svg" alt="moon" class="mx-auto h-5 w-5" />
           </button>
           <button
             class="moon mt-1 h-10 w-10 rounded-full border-blue bg-cube1 transition-all duration-150 hover:border-4"
           >
-            &#9728;
+            <!-- &#9728; -->
+            <img src="assets/sun.svg" alt="sun" class="mx-auto h-5 w-5" />
           </button>
         </div>
         <div class="flex justify-center">
           <button
             id="lan-switch"
-            class="mb-1 mt-1 h-10 w-10 rounded-full border-blue bg-cube1 font-bold transition-all duration-150 hover:border-4 dark:border-light-blue"
+            class="mb-1 mt-1 h-10 w-10 rounded-full border-blue bg-cube1 font-bold text-light-blue transition-all duration-150 hover:border-4 dark:border-light-blue"
             data-i18n="lan-switch"
           >
             en
@@ -540,17 +542,29 @@
       <div
         class="glass fixed right-4 top-32 h-36 w-12 rounded-full lg:left-1/2 lg:top-[24rem] lg:translate-x-[26rem]"
       >
-        <img
-          class="mx-auto mt-2 w-8"
-          src="./assets/github-logo.svg"
-          alt="logo of github"
-        />
-        <img
-          class="mx-auto my-1 w-7"
-          src="./assets/linkedin-logo.svg"
-          alt="logo of linkedin"
-        />
-        <div class="loader"></div>
+        <a
+          href="https://github.com/vtmate"
+          class="cursor-pointer"
+          target="_blank"
+        >
+          <img
+            class="mx-auto mt-1 w-10"
+            src="./assets/github2.svg"
+            alt="logo of github"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/matevargatoth/"
+          class="cursor-pointer"
+          target="_blank"
+        >
+          <img
+            class="mx-auto my-1 w-11"
+            src="./assets/linkedin2.svg"
+            alt="logo of linkedin"
+          />
+        </a>
+        <!-- <div class=""><img src="assets/slice.svg" alt="" /></div> -->
       </div>
     </div>
 
@@ -896,7 +910,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
     <!-- jobhunter -->
     <section
       id="jobhunter-modal"
-      class="scrollbar-thin bg-cube6 fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl text-light-blue transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube6 text-light-blue transition-all duration-500 ease-in-out"
     >
       <div
         id="jobhunter-content"

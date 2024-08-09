@@ -875,6 +875,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-\[3\.5rem\]{
+  margin-bottom: 3.5rem;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
@@ -995,6 +999,10 @@ video {
   height: 10rem;
 }
 
+.h-5{
+  height: 1.25rem;
+}
+
 .h-60{
   height: 15rem;
 }
@@ -1021,6 +1029,10 @@ video {
 
 .w-10{
   width: 2.5rem;
+}
+
+.w-11{
+  width: 2.75rem;
 }
 
 .w-11\/12{
@@ -1051,16 +1063,16 @@ video {
   width: 10rem;
 }
 
+.w-5{
+  width: 1.25rem;
+}
+
 .w-52{
   width: 13rem;
 }
 
 .w-60{
   width: 15rem;
-}
-
-.w-7{
-  width: 1.75rem;
 }
 
 .w-8{
@@ -1255,11 +1267,6 @@ video {
 
 .border-opacity-20{
   --tw-border-opacity: 0.2;
-}
-
-.bg-\[\#a6c1ee\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(166 193 238 / var(--tw-bg-opacity));
 }
 
 .bg-blue{
@@ -1493,6 +1500,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity{
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1544,9 +1557,9 @@ video {
   border-width: 4px;
 }
 
-.hover\:bg-\[\#87acec\]:hover{
+.hover\:bg-cube2:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(135 172 236 / var(--tw-bg-opacity));
+  background-color: rgb(59 72 77 / var(--tw-bg-opacity));
 }
 
 .focus\:z-10:focus{
