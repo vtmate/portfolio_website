@@ -1,7 +1,9 @@
 {
   "introduction": "Innovatív és fiatalos webfejlesztő, aki készen áll valós kihívásokra.",
-  "dfkl!!!!!!!!!jaésdjfaj": "aki jártas a legújabb technológiákban és trendekben",
-  "about_me1": "21 egy éves hallgató vagyok, jelenleg szofverfejlesztőnek tanulok az ",
-  "about_me2": "-n. Két év egyetemi tanulmány után erős szenvedélyt alakítottam ki a webfejlesztés iránt, és gyakorlati tapasztalatot szereztem dinamikus, felhasználóbarát webalkalmazások építésében.",
+  "about_me1": "21 egy éves <b class=\"text-light-purple\">hallgató</b> vagyok, jelenleg szoftverfejlesztőnek tanulok az ",
+  "about_me2": "Magyarországról",
+  "affix": " &nbsp-n,",
+  "about_me3": "<b class=\"text-light-purple\">Gyakornoki </b> munkát keresek,",
+  "about_me4": "<br>hogy tovább fejlesszem magam és gyakorlati tapasztalatot szerezzek <b class=\"text-light-purple\"> full stack </b> fejlesztésben.",
   "lan-switch": "hu"
 }
