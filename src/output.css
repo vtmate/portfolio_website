@@ -1095,6 +1095,14 @@ video {
   width: 100%;
 }
 
+.w-4{
+  width: 1rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
 .min-w-8{
   min-width: 2rem;
 }
@@ -1169,6 +1177,10 @@ video {
 
 .flex-col{
   flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
@@ -1393,6 +1405,14 @@ video {
   text-align: center;
 }
 
+.align-top{
+  vertical-align: top;
+}
+
+.align-bottom{
+  vertical-align: bottom;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1553,6 +1573,14 @@ video {
   font-family: "Poppins", sans-serif;
 }
 
+.hover\:w-96:hover{
+  width: 24rem;
+}
+
+.hover\:w-60:hover{
+  width: 15rem;
+}
+
 .hover\:border-4:hover{
   border-width: 4px;
 }
@@ -1560,6 +1588,11 @@ video {
 .hover\:bg-cube2:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(59 72 77 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-cube1:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 75 81 / var(--tw-bg-opacity));
 }
 
 .focus\:z-10:focus{
@@ -1737,6 +1770,14 @@ video {
   .lg\:bg-light-blue{
     --tw-bg-opacity: 1;
     background-color: rgb(237 241 245 / var(--tw-bg-opacity));
+  }
+
+  .lg\:p-8{
+    padding: 2rem;
+  }
+
+  .lg\:pr-12{
+    padding-right: 3rem;
   }
 }
 

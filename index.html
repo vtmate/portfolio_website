@@ -112,7 +112,7 @@
         >
           <secton class="card glass relative">
             <div id="about" class="absolute -top-12 left-0"></div>
-            <div class="p-8 pr-12">
+            <div class="p-4 pr-8 lg:p-8 lg:pr-12">
               <h3
                 data-i18n="introduction"
                 class="mb-4 text-lg font-semibold leading-5"
@@ -120,24 +120,36 @@
                 A future-focused web developer ready to tackle real-world
                 challenges.
               </h3>
-              <p>
-                <span data-i18n="about_me1"
-                  >I'm a 21-year-old student currently pursuing a degree in
-                  Software Engineering at</span
-                >
-                <a
-                  href="https://www.inf.elte.hu/"
-                  target="_blank"
-                  class="underline"
-                  >ELTE</a
-                >
-                <span data-i18n="about_me2"
-                  >. With two years of university studies under my belt, I've
-                  cultivated a strong passion for web development and have
-                  gained hands-on experience in building dynamic, user-friendly
-                  web applications.</span
-                >
-              </p>
+              <div class="flex items-start">
+                <img
+                  class="w-12"
+                  src="./assets/book.svg"
+                  alt="book illustrating that I am a student"
+                />
+                <p>
+                  <span data-i18n="about_me1"
+                    >I'm a 21-year-old student currently pursuing a degree in
+                    Software Engineering at</span
+                  >
+                  <a
+                    href="https://www.inf.elte.hu/"
+                    target="_blank"
+                    class="underline"
+                    >ELTE.</a
+                  >
+                  <img
+                    class="w-6"
+                    src="./assets/book.svg"
+                    alt="book illustrating that I am a student"
+                  />
+                </p>
+              </div>
+              <span data-i18n="about_me2"
+                >. With two years of university studies under my belt, I've
+                cultivated a strong passion for web development and have gained
+                hands-on experience in building dynamic, user-friendly web
+                applications.</span
+              >
             </div>
             <h2 class="vertical mr-2 text-center">
               A <br />
@@ -150,7 +162,7 @@
           <secton class="card glass relative">
             <div id="studies" class="absolute -top-12 left-0"></div>
 
-            <div class="">
+            <div class="transition-all duration-300 ease-in-out">
               <div class="mx-12">
                 <ol
                   class="relative border-s-2 border-blue border-opacity-20 dark:border-light-blue"
