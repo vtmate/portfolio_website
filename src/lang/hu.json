@@ -1,9 +1,18 @@
 {
-  "introduction": "Innovatív és fiatalos webfejlesztő, aki készen áll valós kihívásokra.",
+  "lan-switch": "hu",
+  "about": "rólam",
+  "studies": "tanulmányok",
+  "skills": "készségek",
+  "projects": "projektek",
+  "contact": "kontakt",
   "about_me1": "21 egy éves <b class=\"text-light-purple\">hallgató</b> vagyok, jelenleg szoftverfejlesztőnek tanulok az ",
   "about_me2": "Magyarországról",
   "affix": " &nbsp-n,",
   "about_me3": "<b class=\"text-light-purple\">Gyakornoki </b> munkát keresek,",
-  "about_me4": "<br>hogy tovább fejlesszem magam és gyakorlati tapasztalatot szerezzek <b class=\"text-light-purple\"> full stack </b> fejlesztésben.",
-  "lan-switch": "hu"
+  "about_me4": "<br>hogy tovább fejlesszem magam, és gyakorlati tapasztalatot szerezzek <b class=\"text-light-purple\"> full stack </b> fejlesztésben.",
+  "studies1": "Folyamatban lévő szoftverfejlesztő diploma <br /> (várható végzés: 2025 májusa).",
+  "studies2": "Elvégeztem a Pixelgyár webdesign tanfolyamát.",
+  "studies3": "Lehetőségem volt adatelemzőként dolgozni a Nubikinél.",
+  "studies4": "Középiskola: Informatika és matematika fakultációkat végeztem, itt szerettem bele a szoftverfejlesztésbe.",
+  "certificate": "Oklevél"
 }

@@ -1,9 +1,18 @@
 {
-  "introduction": "A future-focused web developer ready to tackle real-world challenges.",
+  "lan-switch": "en",
+  "about": "about",
+  "studies": "studies",
+  "skills": "skills",
+  "projects": "projects",
+  "contact": "contact",
   "about_me1": "I am a 21-year-old <b class=\"text-light-purple\">student</b> currently pursuing a degree in Software Engineering at",
   "about_me2": "located in Hungary",
   "affix": "",
   "about_me3": "I am actively looking for an <b class=\"text-light-purple\"> internship </b>",
   "about_me4": "<br />to further develop my skills and gain practical experience in <b class=\"text-light-purple\">full stack</b> development.",
-  "lan-switch": "en"
+  "studies1": "Ongoing computer science degree <br /> (expected graduation in May 2025).",
+  "studies2": "Completed the web design course of Pixelgyár.",
+  "studies3": "Had the oportunity to work at Nubiki as a data-analyzer.",
+  "studies4": "Highschool. Took faculties in IT and Mathematics at an advanced level. <br /> This place is where I fell in love with software engineering.",
+  "certificate": "Certificate"
 }
