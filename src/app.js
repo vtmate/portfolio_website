@@ -33,7 +33,7 @@ projects.forEach((project) => {
     modal.classList.remove("hidden");
     setTimeout(() => {
       modal.classList.toggle("h-0");
-      modal.classList.toggle("h-4/5");
+      modal.classList.toggle("h-[95%]");
       modal.classList.add("p-4");
       modal.classList.add("p-8");
     }, 10);
@@ -52,7 +52,7 @@ projects.forEach((project) => {
     content.classList.toggle("opacity-100");
     setTimeout(() => {
       modal.classList.toggle("h-0");
-      modal.classList.toggle("h-4/5");
+      modal.classList.toggle("h-[95%]");
       modal.classList.remove("p-4");
       modal.classList.remove("pr-8");
     }, 100);
