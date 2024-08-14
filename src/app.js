@@ -33,7 +33,8 @@ projects.forEach((project) => {
     modal.classList.remove("hidden");
     setTimeout(() => {
       modal.classList.toggle("h-0");
-      modal.classList.toggle("h-[95%]");
+      modal.classList.toggle("h-[90%]");
+      modal.classList.toggle("lg:h-[80%]");
       modal.classList.add("p-4");
       modal.classList.add("p-8");
     }, 10);
@@ -52,7 +53,8 @@ projects.forEach((project) => {
     content.classList.toggle("opacity-100");
     setTimeout(() => {
       modal.classList.toggle("h-0");
-      modal.classList.toggle("h-[95%]");
+      modal.classList.toggle("h-[90%]");
+      modal.classList.toggle("lg:h-[80%]");
       modal.classList.remove("p-4");
       modal.classList.remove("pr-8");
     }, 100);
@@ -68,7 +70,9 @@ projects.forEach((project) => {
 
 document.getElementById("show-image-btn").addEventListener("click", () => {
   const imageContainer = document.getElementById("image-container");
+  const arrow = document.getElementById("arrow");
   imageContainer.classList.toggle("hidden");
+  arrow.classList.toggle("rotate-90");
   setTimeout(() => {
     imageContainer.classList.toggle("opacity-0");
   }, 10);

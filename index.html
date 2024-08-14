@@ -6,7 +6,7 @@
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body
-    class="text-blue transition-all dark:bg-dark-blue dark:text-light-blue lg:bg-light-blue"
+    class="bg-light-blue text-blue transition-all dark:bg-dark-blue dark:text-light-blue"
   >
     <!-- cubes -->
     <div class="bg-cube left-40 top-20 h-16 w-16 bg-cube1"></div>
@@ -14,6 +14,8 @@
     <div class="bg-cube left-96 top-60 h-32 w-32 bg-cube3"></div>
     <div class="bg-cube right-80 top-40 h-60 w-60 bg-cube4"></div>
     <div class="bg-cube left-32 top-72 h-40 w-40 bg-cube5"></div>
+
+    <!-- <div class="fixed left-0 top-20 h-4 w-full rotate-12 bg-cube4"></div> -->
 
     <div class="flex justify-center">
       <div class="flex w-[60rem] flex-col justify-end lg:flex-row">
@@ -390,7 +392,8 @@
                       <span data-i18n="certificate">Certificate</span>
 
                       <svg
-                        class="ms-2 h-3 w-3 transition-all duration-300 ease-in-out group-hover:rotate-90"
+                        class="ms-2 h-3 w-3 transition-all duration-300 ease-in-out group-hover:rotate-45"
+                        id="arrow"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -643,7 +646,7 @@
     <!-- arcade -->
     <section
       id="arcade-modal"
-      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube1 text-light-blue transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-x-hidden overflow-y-scroll rounded-xl bg-cube1 text-light-blue transition-all duration-500 ease-in-out"
     >
       <div
         id="arcade-content"
@@ -652,7 +655,7 @@
         <div class="sticky top-0 flex justify-end">
           <button id="arcade-close" class="text-xl">
             <img
-              class="z-30 w-8 translate-x-8"
+              class="z-30 w-10 translate-x-9"
               src="./assets/close.svg"
               alt="icon of the closing button"
             />
@@ -661,7 +664,7 @@
         <a
           href="https://github.com/vtmate/arcade_game"
           target="_blank"
-          class="rounded-md border-2 border-blue px-2"
+          class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
           Visit on github
         </a>
@@ -726,7 +729,7 @@
     <!-- wage calculator-->
     <section
       id="wage-modal"
-      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube2 text-light-blue transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-x-hidden overflow-y-scroll rounded-xl bg-cube2 text-light-blue transition-all duration-500 ease-in-out"
     >
       <div
         id="wage-content"
@@ -735,7 +738,7 @@
         <div class="sticky top-0 flex justify-end">
           <button id="wage-close" class="text-xl">
             <img
-              class="z-30 w-8 translate-x-8"
+              class="z-30 w-10 translate-x-9"
               src="./assets/close.svg"
               alt="icon of the closing button"
             />
@@ -744,7 +747,7 @@
         <a
           href="https://github.com/vtmate/wage_calculator"
           target="_blank"
-          class="rounded-md border-2 border-blue px-2"
+          class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
           Visit on github
         </a>
@@ -801,7 +804,7 @@
     <!-- bomberman-->
     <section
       id="bomberman-modal"
-      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube5 text-light-blue transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-x-hidden overflow-y-scroll rounded-xl bg-cube5 text-light-blue transition-all duration-500 ease-in-out"
     >
       <div
         id="bomberman-content"
@@ -810,7 +813,7 @@
         <div class="sticky top-0 flex justify-end">
           <button id="bomberman-close" class="text-xl">
             <img
-              class="z-30 w-8 translate-x-8"
+              class="z-30 w-10 translate-x-9"
               src="./assets/close.svg"
               alt="icon of the closing button"
             />
@@ -819,7 +822,7 @@
         <a
           href="https://github.com/vtmate/bomberman"
           target="_blank"
-          class="rounded-md border-2 border-blue px-2"
+          class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
           Visit on github
         </a>
@@ -879,7 +882,7 @@
     <!-- cartographer -->
     <section
       id="cartographer-modal"
-      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube3 text-light-blue transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-x-hidden overflow-y-scroll rounded-xl bg-cube3 text-light-blue transition-all duration-500 ease-in-out"
     >
       <div
         id="cartographer-content"
@@ -888,7 +891,7 @@
         <div class="sticky top-0 flex justify-end">
           <button id="cartographer-close" class="text-xl">
             <img
-              class="z-30 w-8 translate-x-8"
+              class="z-30 w-10 translate-x-9"
               src="./assets/close.svg"
               alt="icon of the closing button"
             />
@@ -897,7 +900,7 @@
         <a
           href="https://github.com/vtmate/a_terkepesz"
           target="_blank"
-          class="rounded-md border-2 border-blue px-2"
+          class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
           Visit on github
         </a>
@@ -974,7 +977,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
     <!-- jobhunter -->
     <section
       id="jobhunter-modal"
-      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube6 text-light-blue transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-x-hidden overflow-y-scroll rounded-xl bg-cube6 text-light-blue transition-all duration-500 ease-in-out"
     >
       <div
         id="jobhunter-content"
@@ -983,7 +986,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
         <div class="sticky top-0 flex justify-end">
           <button id="jobhunter-close" class="text-xl">
             <img
-              class="z-30 w-8 translate-x-8"
+              class="z-30 w-10 translate-x-9"
               src="./assets/close.svg"
               alt="icon of the closing button"
             />
@@ -992,7 +995,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
         <a
           href="https://github.com/vtmate/jobhunter"
           target="_blank"
-          class="rounded-md border-2 border-blue px-2"
+          class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
           Visit on github
         </a>
@@ -1059,7 +1062,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
     <!-- portfolio -->
     <section
       id="portfolio-modal"
-      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-xl bg-cube4 text-light-blue transition-all duration-500 ease-in-out"
+      class="scrollbar-thin fixed left-1/2 top-1/2 z-10 hidden h-0 w-11/12 max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-x-hidden overflow-y-scroll rounded-xl bg-cube4 text-light-blue transition-all duration-500 ease-in-out"
     >
       <div
         id="portfolio-content"
@@ -1068,7 +1071,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
         <div class="sticky top-0 flex justify-end">
           <button id="portfolio-close" class="text-xl">
             <img
-              class="z-30 w-8 translate-x-8"
+              class="z-30 w-10 translate-x-9"
               src="./assets/close.svg"
               alt="icon of the closing button"
             />
@@ -1077,7 +1080,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
         <a
           href="https://github.com/vtmate/portfolio_website"
           target="_blank"
-          class="rounded-md border-2 border-blue px-2"
+          class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
           Visit on github
         </a>
