@@ -77,3 +77,12 @@ document.getElementById("show-image-btn").addEventListener("click", () => {
     imageContainer.classList.toggle("opacity-0");
   }, 10);
 });
+
+const clickMeClose = document.getElementById("arcade-close");
+const clickMe = document.getElementById("click_me");
+
+clickMeClose.addEventListener("click", () => {
+  setTimeout(() => {
+    clickMe.classList.add("opacity-0");
+  }, 300);
+});

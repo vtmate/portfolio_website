@@ -240,6 +240,26 @@
                   src="./assets/arcade_game.png"
                   alt="a screenshot of this portfolio page"
                 />
+                <!--  hover:opacity-0 -->
+                <div
+                  class="absolute left-0 top-0 z-50 flex h-full w-full rounded-2xl border-2 border-light-blue bg-blue bg-opacity-80 align-middle transition-opacity duration-500 ease-in-out"
+                  id="click_me"
+                >
+                  <div
+                    class="absolute left-0 top-1/2 w-full -translate-x-3 -translate-y-1/2 text-center text-2xl font-bold tracking-wide"
+                  >
+                    Click me
+                    <div
+                      class="absolute -top-4 right-1/2 translate-x-20 rotate-45"
+                    >
+                      <img
+                        class="w-6 animate-bounce"
+                        src="./assets/cursor.svg"
+                        alt="cursor"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!-- WAGE CALCULATOR -->
@@ -482,10 +502,17 @@
               <h1 class="h-text mb-8 text-center">
                 Want to tell us something?
               </h1>
-              <form class="mx-auto max-w-md">
-                <input name="email" id="email" type="text" />
-                <label for="email"></label>
-                <!-- <div class="group relative z-0 mb-5 w-full">
+              <form
+                class="mx-auto max-w-md"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="324f4278-061d-47d5-8355-21b555da8eec"
+                />
+                <div class="group relative z-0 mb-5 w-full">
                   <input
                     type="email"
                     name="floating_email"
@@ -499,7 +526,7 @@
                     class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
                     >Email address</label
                   >
-                </div> -->
+                </div>
                 <div class="grid md:grid-cols-2 md:gap-6">
                   <div class="group relative z-0 mb-5 w-full">
                     <input
