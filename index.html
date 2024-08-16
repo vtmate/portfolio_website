@@ -523,12 +523,12 @@
 
           <secton class="card glass relative mb-[3.5rem]">
             <div id="contact" class="absolute -top-12 left-0"></div>
-            <div class="my-12 ml-8">
+            <div class="mx-6 my-12 lg:ml-12">
               <h1 class="h-text mb-8 text-center">
-                Want to tell us something?
+                I would love to hear from You!
               </h1>
               <form
-                class="mx-auto max-w-md"
+                class="mx-auto lg:w-[20rem]"
                 action="https://api.web3forms.com/submit"
                 method="POST"
               >
@@ -540,76 +540,45 @@
                 <div class="group relative z-0 mb-5 w-full">
                   <input
                     type="email"
-                    name="floating_email"
-                    id="floating_email"
-                    class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
+                    name="email"
+                    id="email"
+                    class="peer block w-full rounded-none border-0 border-b-2 bg-transparent px-0 py-2.5 text-[16px] focus:outline-none focus:ring-0"
                     placeholder=" "
                     required
                   />
                   <label
-                    for="floating_email"
-                    class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+                    for="email"
+                    class="0 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
                     >Email address</label
                   >
                 </div>
-                <div class="grid md:grid-cols-2 md:gap-6">
-                  <div class="group relative z-0 mb-5 w-full">
-                    <input
-                      type="text"
-                      name="floating_first_name"
-                      id="floating_first_name"
-                      class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
-                      placeholder=" "
-                      required
-                    />
-                    <label
-                      for="floating_first_name"
-                      class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
-                      >First name</label
-                    >
-                  </div>
-                  <div class="group relative z-0 mb-5 w-full">
-                    <input
-                      type="text"
-                      name="floating_last_name"
-                      id="floating_last_name"
-                      class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
-                      placeholder=" "
-                      required
-                    />
-                    <label
-                      for="floating_last_name"
-                      class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
-                      >Last name</label
-                    >
-                  </div>
-                </div>
-                <div class="group relative z-0 mb-12 w-full">
+
+                <div class="group relative z-0 mb-5 w-full">
                   <input
-                    type="tel"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    name="floating_phone"
-                    id="floating_phone"
-                    class="text-gray-900 border-gray-300 appearance00 blue-500 focus:border-blue-600 peer block w-full border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:outline-none focus:ring-0"
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="peer block w-full rounded-none border-0 border-b-2 bg-transparent px-0 py-2.5 text-[16px] focus:outline-none focus:ring-0"
                     placeholder=" "
                     required
                   />
                   <label
-                    for="floating_phone"
-                    class="0 peer-focus:text-blue-600 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
-                    >Phone number (123-456-7890)</label
+                    for="name"
+                    class="0 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
+                    >Name</label
                   >
                 </div>
-
                 <div class="mb-8">
                   <label for="message" class="0 mb-2 block text-sm"
                     >Message</label
                   >
                   <textarea
                     id="message"
+                    name="message"
                     rows="4"
-                    class="text-gray-900 bg-gray-50 border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full rounded-lg border p-2.5 text-sm"
+                    class="bg-gray-50 block w-full rounded-lg border border-r-cube4 p-2.5 text-[16px] text-sm text-dark-blue"
                     placeholder="Write your thoughts here..."
+                    required
                   ></textarea>
                 </div>
 
