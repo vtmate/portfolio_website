@@ -35,8 +35,9 @@ projects.forEach((project) => {
       modal.classList.toggle("h-0");
       modal.classList.toggle("h-[90%]");
       modal.classList.toggle("lg:h-[80%]");
+      modal.classList.add("lg:p-8");
       modal.classList.add("p-4");
-      modal.classList.add("p-8");
+      modal.classList.add("pr-8");
     }, 10);
     setTimeout(() => {
       content.classList.toggle("opacity-0");
@@ -55,6 +56,7 @@ projects.forEach((project) => {
       modal.classList.toggle("h-0");
       modal.classList.toggle("h-[90%]");
       modal.classList.toggle("lg:h-[80%]");
+      modal.classList.remove("lg:p-8");
       modal.classList.remove("p-4");
       modal.classList.remove("pr-8");
     }, 100);

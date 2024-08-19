@@ -14,5 +14,14 @@
   "studies2": "Completed the web design course of Pixelgyár.",
   "studies3": "Had the oportunity to work at Nubiki as a data-analyzer.",
   "studies4": "Highschool. Took faculties in IT and Mathematics at an advanced level. <br /> This place is where I fell in love with software engineering.",
-  "certificate": "Certificate"
+  "certificate": "Certificate",
+  "tech": "Technologies I use:",
+  "other_tech": "I am also familiar with:",
+  "click": "Click me",
+  "visit": "Visit on github",
+  "try": "Try it >",
+  "farewell": "I would love to hear from You!",
+  "name": "Name",
+  "message": "Message",
+  "submit": "Submit"
 }

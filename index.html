@@ -201,18 +201,24 @@
           <secton class="card glass relative">
             <div id="skills" class="absolute -top-12 left-0"></div>
             <div class="w-full">
-              <h3>Tech Stack:</h3>
+              <h3 data-i18n="tech" class="p-4 pb-0 pr-8 lg:p-8 lg:pr-12">
+                Technologies I use:
+              </h3>
               <img
                 class="mx-auto my-4 w-[23rem]"
                 src="./assets/stack-map.png"
                 alt="programming languages and tools I use"
               />
-              <p>I have also created/worked with:</p>
-              <ul>
-                <li class="ml-8 list-disc">RESTful APIs</li>
-                <li class="ml-8 list-disc">GraphQL</li>
-                <li class="ml-8 list-disc">JWT Authentication</li>
-              </ul>
+              <div class="p-4 pr-8 lg:p-8 lg:pr-12">
+                <p data-i18n="other_tech" ="">I am also familiar with:</p>
+                <ul class="mt-2 grid grid-cols-2">
+                  <li class="ml-8 list-disc">RESTful APIs</li>
+                  <li class="ml-8 list-disc">GraphQL</li>
+                  <li class="ml-8 list-disc">JWT Authentication</li>
+                  <li class="ml-8 list-disc">CI/CD Pipelines</li>
+                  <li class="ml-8 list-disc">Sequelize (ORM)</li>
+                </ul>
+              </div>
               <!-- <h3>Frontend Development</h3>
               <ul>
                 <li class="ml-8 list-disc">JavaScript, React, Redux</li>
@@ -271,7 +277,6 @@
                   src="./assets/arcade_game.png"
                   alt="a screenshot of this portfolio page"
                 />
-                <!--  hover:opacity-0 -->
                 <div
                   class="absolute left-0 top-0 z-50 flex h-full w-full rounded-xl border-2 border-dark-blue bg-blue bg-opacity-80 align-middle transition-opacity duration-500 ease-in-out dark:border-light-blue"
                   id="click_me"
@@ -279,7 +284,7 @@
                   <div
                     class="absolute left-0 top-1/2 w-full -translate-x-3 -translate-y-1/2 text-center text-2xl font-bold tracking-wide"
                   >
-                    Click me
+                    <span data-i18n="click">Click me</span>
                     <div
                       class="absolute -top-4 right-1/2 translate-x-20 rotate-45"
                     >
@@ -529,8 +534,8 @@
 
           <secton class="card glass relative mb-[3.5rem]">
             <div id="contact" class="absolute -top-12 left-0"></div>
-            <div class="mx-6 my-12 lg:ml-12">
-              <h1 class="h-text mb-8 text-center">
+            <div class="mx-6 my-12 w-full lg:ml-12">
+              <h1 data-i18n="farewell" class="h-text mb-8 text-center">
                 I would love to hear from You!
               </h1>
               <form
@@ -555,7 +560,7 @@
                   <label
                     for="email"
                     class="0 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
-                    >Email address</label
+                    >Email</label
                   >
                 </div>
 
@@ -569,13 +574,17 @@
                     required
                   />
                   <label
+                    data-i18n="name"
                     for="name"
                     class="0 peer-focus absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium rtl:peer-focus:translate-x-1/4"
                     >Name</label
                   >
                 </div>
                 <div class="mb-8">
-                  <label for="message" class="0 mb-2 block text-sm"
+                  <label
+                    data-i18n="message"
+                    for="message"
+                    class="0 mb-2 block text-sm"
                     >Message</label
                   >
                   <textarea
@@ -589,6 +598,7 @@
                 </div>
 
                 <button
+                  data-i18n="submit"
                   type="submit"
                   class="text-white focus:ring-blue-300 dar-700ue-800 w-full rounded-lg bg-cube1 px-5 py-2.5 text-center text-sm font-medium text-light-blue transition-colors duration-300 ease-in-out hover:bg-cube2 focus:outline-none focus:ring-4 sm:w-auto"
                 >
@@ -704,7 +714,7 @@
           target="_blank"
           class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
-          Visit on github
+          <span data-i18n="visit">Visit on github</span>
         </a>
         <h3 class="mt-8 text-2xl">The arcade - Laravel Game Project</h3>
         <p>
@@ -787,7 +797,7 @@
           target="_blank"
           class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
-          Visit on github
+          <span data-i18n="visit">Visit on github</span>
         </a>
         <h3 class="mt-8 text-2xl">Wage Calculator - React Project</h3>
         <p>
@@ -862,7 +872,7 @@
           target="_blank"
           class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
-          Visit on github
+          <span data-i18n="visit">Visit on github</span>
         </a>
         <h3 class="mt-8 text-2xl">Bomberman - Java Project</h3>
         <p>
@@ -935,13 +945,21 @@
             />
           </button>
         </div>
-        <a
-          href="https://github.com/vtmate/a_terkepesz"
-          target="_blank"
-          class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
-        >
-          Visit on github
-        </a>
+        <div class="flex">
+          <a
+            href="https://github.com/vtmate/a_terkepesz"
+            target="_blank"
+            class="mr-2 rounded-md border-2 border-light-blue border-opacity-50 px-2"
+          >
+            <span data-i18n="visit">Visit on github</span>
+          </a>
+          <a
+            class="rounded-md border-2 border-light-blue border-opacity-50 px-4 text-light-blue"
+            href="https://vtmate.github.io/a_terkepesz/"
+            target="_blank"
+            ><span data-i18n="try">Try it ></span></a
+          >
+        </div>
         <h3 class="mt-8 text-2xl">
           The Cartographer - JavaScript Game Project
         </h3>
@@ -959,30 +977,12 @@
             >my github</a
           >
         </p>
-        <!-- The Cartographer - JavaScript játék projekt
-
-Leírás:
-A Cartographer az egyik első nagyobb projektem, amit teljes egészében JavaScript-ben készítettem. Ez a projekt jól mutatja, hogy mennyire értem a JavaScript alapjait. Bár nincs benne semmi különlegesen fejlett funkció, remekül szemlélteti, hogy hogyan kezelem az alapvető játéklogikát, a DOM manipulációt és a felhasználói interakciókat.
-
-A játékszabályok a GitHub oldalamon találhatók.
-Főbb jellemzők:
-Játékmenet: Egy egyjátékos játék, ahol egy 11x11-es rácsos térképen különböző terepelemeket helyezhetsz el.
-Véletlenszerűség: Térképelemek és küldetéskártyák véletlenszerű kiválasztása.
-Időkezelés: Egy rendszer, amely nyomon követi a játék időtartamát és az évszakokat.
-Pontozási rendszer: Egy pontozási mechanizmus, amely a küldetések céljain és a térképelemek elhelyezésén alapul.
-Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a térképelemek elhelyezését és a játék előrehaladásának nyomon követését. -->
-        <div class="relative">
+        <div>
           <img
             class="z-0 my-4 w-full rounded-xl"
             src="./assets/a_terkepesz_full.png"
             alt="the cartographer gameboard"
           />
-          <a
-            class="absolute right-4 top-4 rounded-md border-2 border-light-blue bg-blue px-4 py-2 text-light-blue"
-            href="https://vtmate.github.io/a_terkepesz/"
-            target="_blank"
-            >Try it</a
-          >
         </div>
 
         <h4 class="mt-4 text-xl">Key Features:</h4>
@@ -1035,7 +1035,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
           target="_blank"
           class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
-          Visit on github
+          <span data-i18n="visit">Visit on github</span>
         </a>
         <h3 class="mt-8 text-2xl">The Jobhunter - Redux Project</h3>
         <p>
@@ -1126,7 +1126,7 @@ Felhasználói felület: Egyszerű, de hasznos UI, amely lehetővé teszi a tér
           target="_blank"
           class="rounded-md border-2 border-light-blue border-opacity-50 px-2"
         >
-          Visit on github
+          <span data-i18n="visit">Visit on github</span>
         </a>
         <h3 class="mt-8 text-2xl">Portfolio Website</h3>
         <p>

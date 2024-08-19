@@ -14,5 +14,14 @@
   "studies2": "Elvégeztem a Pixelgyár webdesign tanfolyamát.",
   "studies3": "Lehetőségem volt adatelemzőként dolgozni a Nubikinél.",
   "studies4": "Középiskola: Informatika és matematika fakultációkat végeztem, itt szerettem bele a szoftverfejlesztésbe.",
-  "certificate": "Oklevél"
+  "certificate": "Oklevél",
+  "tech": "Technológiák, amiket használok:",
+  "other_tech": "Még ezeket ismerem:",
+  "click": "Kattints",
+  "visit": "Megtekintés github-on",
+  "try": "Kipróbálom >",
+  "farewell": "Szeretnék hallani Felőled!",
+  "name": "Név",
+  "message": "Üzenet",
+  "submit": "Küldés"
 }
