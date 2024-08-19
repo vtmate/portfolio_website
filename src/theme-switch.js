@@ -6,6 +6,7 @@ const nameLight = document.querySelector(".name-light");
 
 // Github Logo
 const githubLogo = document.getElementById("github_logo");
+// const githubLogo2 = document.getElementById("github_logo2");
 
 // Theme Vars
 const userTheme = localStorage.getItem("theme");
@@ -24,11 +25,13 @@ const themeCheck = () => {
     moonIcon.classList.add("display-none");
     nameLight.classList.add("display-none");
     githubLogo.setAttribute("fill", "#7D6590");
+    // githubLogo2.setAttribute("fill", "#7D6590");
     return;
   }
   nameDark.classList.add("display-none");
   sunIcon.classList.add("display-none");
   githubLogo.setAttribute("fill", "#5D3E74");
+  // githubLogo2.setAttribute("fill", "#5D3E74");
 };
 
 // Manual Theme Switch
@@ -51,11 +54,13 @@ const themeSwitch = () => {
 sunIcon.addEventListener("click", () => {
   themeSwitch();
   githubLogo.setAttribute("fill", "#5D3E74");
+  // githubLogo2.setAttribute("fill", "#5D3E74");
 });
 
 moonIcon.addEventListener("click", () => {
   themeSwitch();
   githubLogo.setAttribute("fill", "#7D6590");
+  // githubLogo2.setAttribute("fill", "#7D6590");
 });
 
 //invoke theme check on initial load

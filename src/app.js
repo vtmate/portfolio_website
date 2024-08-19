@@ -1,3 +1,4 @@
+// adding the same opening and closing effect for all modals
 const projectElements = {};
 const projects = [
   "arcade",
@@ -70,6 +71,7 @@ projects.forEach((project) => {
   });
 });
 
+// showing and hiding the certification image
 document.getElementById("show-image-btn").addEventListener("click", () => {
   const imageContainer = document.getElementById("image-container");
   const arrow = document.getElementById("arrow");
@@ -80,6 +82,7 @@ document.getElementById("show-image-btn").addEventListener("click", () => {
   }, 10);
 });
 
+// hiding click me part after closing the modal
 const clickMeClose = document.getElementById("arcade-close");
 const clickMe = document.getElementById("click_me");
 
@@ -87,4 +90,58 @@ clickMeClose.addEventListener("click", () => {
   setTimeout(() => {
     clickMe.classList.add("opacity-0");
   }, 300);
+});
+
+// menu
+document.getElementById("menu_button").addEventListener("change", function () {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("h-12");
+  menu.classList.toggle("h-60");
+
+  var themeButton = document.getElementById("theme_button");
+  var lanButton = document.getElementById("lan_button");
+  var githubButton = document.getElementById("github_button");
+  var linkedinButton = document.getElementById("linkedin_button");
+
+  if (this.checked) {
+    setTimeout(() => {
+      themeButton.classList.toggle("invisible");
+      themeButton.classList.toggle("opacity-0");
+      themeButton.classList.toggle("opacity-100");
+    }, 100);
+
+    setTimeout(() => {
+      lanButton.classList.toggle("invisible");
+      lanButton.classList.toggle("opacity-0");
+      lanButton.classList.toggle("opacity-100");
+    }, 150);
+
+    setTimeout(() => {
+      githubButton.classList.toggle("invisible");
+      githubButton.classList.toggle("opacity-0");
+      githubButton.classList.toggle("opacity-100");
+    }, 200);
+
+    setTimeout(() => {
+      linkedinButton.classList.toggle("invisible");
+      linkedinButton.classList.toggle("opacity-0");
+      linkedinButton.classList.toggle("opacity-100");
+    }, 250);
+  } else {
+    themeButton.classList.toggle("invisible");
+    themeButton.classList.toggle("opacity-0");
+    themeButton.classList.toggle("opacity-100");
+
+    lanButton.classList.toggle("invisible");
+    lanButton.classList.toggle("opacity-0");
+    lanButton.classList.toggle("opacity-100");
+
+    githubButton.classList.toggle("invisible");
+    githubButton.classList.toggle("opacity-0");
+    githubButton.classList.toggle("opacity-100");
+
+    linkedinButton.classList.toggle("invisible");
+    linkedinButton.classList.toggle("opacity-0");
+    linkedinButton.classList.toggle("opacity-100");
+  }
 });
