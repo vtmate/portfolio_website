@@ -101,6 +101,10 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
 
+  .hamburger-line {
+    @apply fill-none stroke-dark-blue dark:stroke-light-blue;
+  }
+
   .vertical {
     @apply text-5xl font-extrabold opacity-10;
   }

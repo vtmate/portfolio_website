@@ -919,10 +919,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-\[3\.5rem\]{
-  margin-bottom: 3.5rem;
-}
-
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -1729,6 +1725,15 @@ video {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.hamburger-line{
+  fill: none;
+  stroke: #101D28;
+}
+
+.hamburger-line:is(.dark *){
+  stroke: #edf1f5;
+}
+
 .vertical{
   font-size: 3rem;
   line-height: 1;
@@ -1927,6 +1932,10 @@ video {
     margin-right: 3rem;
   }
 
+  .lg\:mb-\[3\.5rem\]{
+    margin-bottom: 3.5rem;
+  }
+
   .lg\:ml-0{
     margin-left: 0px;
   }
@@ -2008,6 +2017,10 @@ video {
 
   .lg\:opacity-100{
     opacity: 1;
+  }
+
+  .lg\:hover\:border-4:hover{
+    border-width: 4px;
   }
 
   .group:hover .lg\:group-hover\:-translate-y-4{
