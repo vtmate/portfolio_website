@@ -23,5 +23,18 @@
   "farewell": "Szeretnék hallani Felőled!",
   "name": "Név",
   "message": "Üzenet",
-  "submit": "Küldés"
+  "submit": "Küldés",
+  "features": "Fő funkciók:",
+  "tech_used": "Használt Technológiák:",
+  "arcade1": "Az Árkád - Laravel Játék Projekt",
+  "arcade2": "Ebben a projektben egy egyszemélyes, körökre oszott harci játékot hoztam létre Laravel keretrendszerrel. A cél egy szórakoztató játék létrehozása volt különböző elvárások mellett.",
+  "arcade3": "Regisztráció és Profil Kezelés",
+  "arcade4": "Admin Jogosultságok",
+  "arcade5": "Fájlkezelés",
+  "arcade6": "Játék Logika",
+  "wage1": "Bérkalkulátor - React Projekt",
+  "wage2": "Itt egy olyan webes alkalmazás létrehozása volt a cél, amely lehetővé teszi a felhasználók számára nettó jövedelmüket a havi bruttó fizetésük alapján számítsák ki. A alkalmazás figyelembe veszi a különböző adókedvezményeket és biztosít egy lehetőség több háztartástag jövedelmének összesítésére.",
+  "wage3": "Bruttó-nettó bérszámítás",
+  "wage4": "Adólevonások kezelése",
+  "wage5": "A háztartás nettó jövedelme"
 }

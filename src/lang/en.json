@@ -23,5 +23,18 @@
   "farewell": "I would love to hear from You!",
   "name": "Name",
   "message": "Message",
-  "submit": "Submit"
+  "submit": "Submit",
+  "features": "Key Features:",
+  "tech_used": "Technology used:",
+  "arcade1": "The Arcade - Laravel Game Project",
+  "arcade2": "In this project, I developed a single-player, turn-based arcade combat game using the Laravel framework. The goal was to create an engaging game while adhering to specific requirements.",
+  "arcade3": "User Registration & Management",
+  "arcade4": "Admin Controls",
+  "arcade5": "File Management",
+  "arcade6": "Game Logic",
+  "wage1": "Wage Calculator - React Project",
+  "wage2": "Here the goal was to create a web application that allows users to calculate their net income based on their monthly gross salary. The application takes into account various tax deductions and provides an option to aggregate the incomes of multiple household members.",
+  "wage3": "Gross-Net Salary Calculation",
+  "wage4": "Tax Deductions Management",
+  "wage5": "Household Net Income"
 }

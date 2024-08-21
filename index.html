@@ -275,7 +275,7 @@
                 <img
                   class="absolute left-6 top-12 h-72 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out lg:group-hover:-translate-y-4"
                   src="./assets/arcade_game.png"
-                  alt="a screenshot of this portfolio page"
+                  alt="Arcade game playgrounds"
                 />
                 <div
                   class="absolute left-0 top-0 z-50 flex h-full w-full rounded-xl border-2 border-dark-blue bg-blue bg-opacity-80 align-middle transition-opacity duration-500 ease-in-out dark:border-light-blue"
@@ -311,7 +311,7 @@
                 <img
                   class="absolute -left-8 top-12 h-40 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out lg:left-6 lg:group-hover:-translate-y-4"
                   src="./assets/wage_calculator.png"
-                  alt="a screenshot of this portfolio page"
+                  alt="Wage Calculator"
                 />
               </div>
 
@@ -328,7 +328,7 @@
                 <img
                   class="absolute left-6 top-12 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out lg:group-hover:-translate-y-4"
                   src="./assets/bomberman.png"
-                  alt="a screenshot of this portfolio page"
+                  alt="Bomberman playground"
                 />
               </div>
 
@@ -345,7 +345,7 @@
                 <img
                   class="absolute left-6 top-12 h-60 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out lg:h-32 lg:group-hover:-translate-y-4"
                   src="./assets/the_cartographer.png"
-                  alt="a screenshot of this portfolio page"
+                  alt="Fields of Cartographer"
                 />
               </div>
 
@@ -362,7 +362,7 @@
                 <img
                   class="absolute left-6 top-12 h-40 rounded-3xl border-2 border-light-blue object-cover transition-transform duration-500 ease-in-out lg:h-32 lg:group-hover:-translate-y-4"
                   src="./assets/jobhunter.png"
-                  alt="a screenshot of this portfolio page"
+                  alt="Jobhunter filtering section"
                 />
               </div>
 
@@ -794,8 +794,10 @@
         >
           <span data-i18n="visit">Visit on github</span>
         </a>
-        <h3 class="mt-8 text-2xl">The arcade - Laravel Game Project</h3>
-        <p>
+        <h3 data-i18n="arcade1" class="mt-8 text-2xl">
+          The Arcade - Laravel Game Project
+        </h3>
+        <p data-i18n="arcade2">
           In this project, I developed a single-player, turn-based arcade combat
           game using the Laravel framework. The goal was to create an engaging
           game while adhering to specific requirements.
@@ -808,25 +810,35 @@
           />
         </div>
 
-        <h4 class="mt-4 text-xl">Key Features:</h4>
+        <div class="mx-auto flex w-fit flex-col lg:flex-row">
+          <div class="mr-4">
+            <h4 data-i18n="features" class="mb-1 mt-4 text-xl">
+              Key Features:
+            </h4>
+            <ul>
+              <li data-i18n="arcade3" class="ml-8 list-disc">
+                User Registration & Management
+              </li>
+              <li data-i18n="arcade4" class="ml-8 list-disc">Admin Controls</li>
+              <li data-i18n="arcade5" class="ml-8 list-disc">
+                File Management
+              </li>
+              <li data-i18n="arcade6" class="ml-8 list-disc">Game Logic</li>
+            </ul>
+          </div>
 
-        <ul>
-          <li class="ml-8 list-disc">
-            User Registration & Management: Users can register, manage their
-            profiles, and handle characters.
-          </li>
-          <li class="ml-8 list-disc">
-            Admin Controls: Admins can manage locations, including creating,
-            editing, and deleting entries.
-          </li>
-          <li class="ml-8 list-disc">
-            File Management: Enabled image uploads for game locations.
-          </li>
-          <li class="ml-8 list-disc">
-            Game Logic: Developed core turn-based combat mechanics, including
-            various attack types and health management.
-          </li>
-        </ul>
+          <div>
+            <h4 data-i18n="tech_used" class="mb-1 mt-4 text-xl">
+              Technology used:
+            </h4>
+            <ul>
+              <li class="ml-8 list-disc">Eloquent (ORM)</li>
+              <li class="ml-8 list-disc">CRUD</li>
+              <li class="ml-8 list-disc">Breeze</li>
+              <li class="ml-8 list-disc">SQLite, Migration, Seeder, Factory</li>
+            </ul>
+          </div>
+        </div>
 
         <img
           class="z-0 my-4 w-full rounded-xl"
@@ -834,7 +846,7 @@
           alt="site of the arcade match"
         />
 
-        <div class="mt-4 flex rounded-xl bg-blue-tr p-2">
+        <!-- <div class="mt-4 flex rounded-xl bg-blue-tr p-2">
           <div class="mr-2">
             <img
               class="w-8 min-w-8"
@@ -848,7 +860,7 @@
             full-stack project independently, from database management to user
             interface design.
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -877,8 +889,10 @@
         >
           <span data-i18n="visit">Visit on github</span>
         </a>
-        <h3 class="mt-8 text-2xl">Wage Calculator - React Project</h3>
-        <p>
+        <h3 data-i18n="wage1" class="mt-8 text-2xl">
+          Wage Calculator - React Project
+        </h3>
+        <p data-i18n="wage2">
           Here the goal was to create a web application that allows users to
           calculate their net income based on their monthly gross salary. The
           application takes into account various tax deductions and provides an
@@ -892,24 +906,38 @@
           />
         </div>
 
-        <h4 class="mt-4 text-xl">Key Features:</h4>
+        <h4 data-i18n="features" class="mb-1 mt-4 text-xl">Key Features:</h4>
 
-        <ul>
-          <li class="ml-8 list-disc">
-            Gross-Net Salary Calculation: Automatically calculates net salary
-            based on the provided gross salary.
-          </li>
-          <li class="ml-8 list-disc">
-            Tax Deductions Management: Users can activate various tax deductions
-            such as the under 25 SZJA deduction, personal tax deduction, first
-            marriage deduction, and dependents' deductions.
-          </li>
-          <li class="ml-8 list-disc">
-            Household Net Income: Allows users to input multiple household
-            members' incomes and calculate the total net income for the
-            household.
-          </li>
-        </ul>
+        <div class="mx-auto flex w-fit flex-col lg:flex-row">
+          <div class="mr-4">
+            <h4 data-i18n="features" class="mb-1 mt-4 text-xl">
+              Key Features:
+            </h4>
+            <ul>
+              <li data-i18n="wage3" class="ml-8 list-disc">
+                Gross-Net Salary Calculation
+              </li>
+              <li data-i18n="wage4" class="ml-8 list-disc">
+                Tax Deductions Management
+              </li>
+              <li data-i18n="wage5" class="ml-8 list-disc">
+                Household Net Income
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 data-i18n="tech_used" class="mb-1 mt-4 text-xl">
+              Technology used:
+            </h4>
+            <ul>
+              <li class="ml-8 list-disc">Eloquent (ORM)</li>
+              <li class="ml-8 list-disc">CRUD</li>
+              <li class="ml-8 list-disc">Breeze</li>
+              <li class="ml-8 list-disc">SQLite, Migration, Seeder, Factory</li>
+            </ul>
+          </div>
+        </div>
 
         <div class="mt-4 flex rounded-xl bg-blue-tr p-2">
           <div class="mr-2">
@@ -968,7 +996,7 @@
           />
         </div>
 
-        <h4 class="mt-4 text-xl">Key Features:</h4>
+        <h4 data-i18n="features" class="mb-1 mt-4 text-xl">Key Features:</h4>
 
         <ul>
           <li class="ml-8 list-disc">
@@ -1063,7 +1091,7 @@
           />
         </div>
 
-        <h4 class="mt-4 text-xl">Key Features:</h4>
+        <h4 data-i18n="features" class="mb-1 mt-4 text-xl">Key Features:</h4>
 
         <ul>
           <li class="ml-8 list-disc">
@@ -1130,7 +1158,7 @@
           />
         </div>
 
-        <h4 class="mt-4 text-xl">Key Features:</h4>
+        <h4 data-i18n="features" class="mb-1 mt-4 text-xl">Key Features:</h4>
 
         <ul>
           <li class="ml-8 list-disc">
@@ -1221,7 +1249,7 @@
           />
         </div>
 
-        <h4 class="mt-4 text-xl">Key Features:</h4>
+        <h4 data-i18n="features" class="mb-1 mt-4 text-xl">Key Features:</h4>
 
         <ul>
           <li class="ml-8 list-disc">
