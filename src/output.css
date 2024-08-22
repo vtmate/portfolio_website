@@ -562,7 +562,7 @@ video {
   position: fixed;
   z-index: -10;
   border-radius: 1rem;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .bg-cube:is(.dark *){
@@ -877,6 +877,11 @@ video {
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .-mb-8{
@@ -1848,6 +1853,11 @@ video {
 .dark\:bg-dark-blue:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(16 29 40 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-light-blue:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 241 245 / var(--tw-bg-opacity));
 }
 
 .dark\:text-light-blue:is(.dark *){
