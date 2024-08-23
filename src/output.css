@@ -879,11 +879,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .-mb-8{
   margin-bottom: -2rem;
 }
@@ -946,6 +941,10 @@ video {
 
 .mr-4{
   margin-right: 1rem;
+}
+
+.mr-8{
+  margin-right: 2rem;
 }
 
 .ms-2{
