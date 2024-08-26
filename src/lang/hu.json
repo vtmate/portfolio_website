@@ -52,5 +52,10 @@
   "jobhunter2": "A Jobhunter egy álláskereső weboldal, ahol regisztrálhat álláskeresőként vagy munkaadóként, és jelentkezhet vagy éppen hirdethet állásokat.",
   "jobhunter3": "Felhasználói regisztráció",
   "jobhunter4": "Állásböngészés és szűrés",
-  "jobhunter5": "Álláshirdetés és jelentkezés"
+  "jobhunter5": "Álláshirdetés és jelentkezés",
+  "portfolio1": "Portfólió Weboldal",
+  "portfolio2": "A portfólió weboldalamat az alapoktól építettem fel HTML, CSS (Tailwind) és JavaScript használatával. Célom az volt, hogy bemutassam a webfejlesztési alapokban szerzett erős tudásomat, valamint a design és a felhasználói élmény iránti figyelmemet.",
+  "portfolio3": "Kétnyelvű támogatás",
+  "portfolio4": "Sötét-világos téma",
+  "portfolio5": "Interaktív modálok"
 }

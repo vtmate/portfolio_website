@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
     <title>vtmate</title>
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
 
     <meta property="og:title" content="vtmate" />
     <meta property="og:description" content="Varga-Tóth Máté Portfolio Page " />
@@ -1294,8 +1295,8 @@
         >
           <span data-i18n="visit">Visit on GitHub</span>
         </a>
-        <h3 class="mt-8 text-2xl">Portfolio Website</h3>
-        <p>
+        <h3 data-i18n="portfolio1" class="mt-8 text-2xl">Portfolio Website</h3>
+        <p data-i18n="portfolio2">
           I developed my portfolio website from scratch using HTML, CSS
           (Tailwind), and JavaScript. I wanted to showcase my strong grasp of
           web development fundamentals and my attention to design and user
@@ -1309,29 +1310,35 @@
           />
         </div>
 
-        <h4 data-i18n="features" class="mb-1 mt-4 text-xl">Key features:</h4>
+        <div class="mx-auto flex w-fit flex-col lg:flex-row">
+          <div class="mr-8">
+            <h4 data-i18n="features" class="mb-1 mt-4 text-xl">
+              Key features:
+            </h4>
+            <ul>
+              <li data-i18n="portfolio3" class="ml-8 list-disc">
+                Bilingual support
+              </li>
+              <li data-i18n="portfolio4" class="ml-8 list-disc">
+                Dark theme switcher
+              </li>
+              <li data-i18n="portfolio5" class="ml-8 list-disc">
+                Interactive modals
+              </li>
+            </ul>
+          </div>
 
-        <ul>
-          <li class="ml-8 list-disc">
-            HTML & Semantic Structure: Ensures well-structured, accessible
-            content.
-          </li>
-          <li class="ml-8 list-disc">
-            CSS with Tailwind: Utilized Tailwind CSS for a responsive, modern
-            design.
-          </li>
-          <li class="ml-8 list-disc">
-            JavaScript Interactivity: Implemented bilingual support, dark theme
-            switcher, and modals.
-          </li>
-          <li class="ml-8 list-disc">
-            Responsive Design: Optimized for various devices and screen sizes.
-          </li>
-          <li class="ml-8 list-disc">
-            Design Aesthetics: Combined modern principles with a clean,
-            minimalistic layout.
-          </li>
-        </ul>
+          <div>
+            <h4 data-i18n="tech_used" class="mb-1 mt-4 text-xl">
+              Technology used:
+            </h4>
+            <ul>
+              <li class="ml-8 list-disc">HTML</li>
+              <li class="ml-8 list-disc">Tailwind CSS</li>
+              <li class="ml-8 list-disc">JavaScript</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 

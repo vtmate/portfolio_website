@@ -52,5 +52,10 @@
   "jobhunter2": "Jobhunter is a job search website where you can register as either a job seeker or an employer and apply for or post jobs.",
   "jobhunter3": "User registration",
   "jobhunter4": "Job browsing and filtering",
-  "jobhunter5": "Job posting and application"
+  "jobhunter5": "Job posting and application",
+  "portfolio1": "Portfolio Website",
+  "portfolio2": "I developed my portfolio website from scratch using HTML, CSS (Tailwind), and JavaScript. I wanted to showcase my strong grasp of web development fundamentals and my attention to design and user experience.",
+  "portfolio3": "Bilingual support",
+  "portfolio4": "Dark theme switcher",
+  "portfolio5": "Interactive modals"
 }
