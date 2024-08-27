@@ -1546,6 +1546,22 @@ video {
   padding-top: 2rem;
 }
 
+.pr-9{
+  padding-right: 2.25rem;
+}
+
+.pr-10{
+  padding-right: 2.5rem;
+}
+
+.pr-12{
+  padding-right: 3rem;
+}
+
+.pr-20{
+  padding-right: 5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2010,6 +2026,58 @@ video {
 
   .lg\:pr-12{
     padding-right: 3rem;
+  }
+
+  .lg\:pr-14{
+    padding-right: 3.5rem;
+  }
+
+  .lg\:pr-16{
+    padding-right: 4rem;
+  }
+
+  .lg\:pr-20{
+    padding-right: 5rem;
+  }
+
+  .lg\:pr-\[4\.5rem\]{
+    padding-right: 4.5rem;
+  }
+
+  .lg\:pr-\[4rem\]{
+    padding-right: 4rem;
+  }
+
+  .lg\:pr-\[4\.3rem\]{
+    padding-right: 4.3rem;
+  }
+
+  .lg\:pr-\[69px\]{
+    padding-right: 69px;
+  }
+
+  .lg\:pr-\[68px\]{
+    padding-right: 68px;
+  }
+
+  .lg\:pr-\[68\.8px\]{
+    padding-right: 68.8px;
+  }
+
+  .lg\:pr-\[68\.9px\]{
+    padding-right: 68.9px;
+  }
+
+  .lg\:pr-\[68\.95px\]{
+    padding-right: 68.95px;
+  }
+
+  .lg\:pr-\[67px\]{
+    padding-right: 67px;
+  }
+
+  .lg\:pr-\[67\.5px\]{
+    padding-right: 67.5px;
   }
 
   .lg\:text-center{
