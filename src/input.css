@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    background: bg-cube2;
+    scroll-gutter: stable;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-transparent; /* Background of the scrollbar track */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-light-purple; /* Scrollbar color */
+    border-radius: 6px; /* Rounded edges for the scrollbar */
+    border: 3px solid transparent; /* Adds some padding around the thumb */
+    background-clip: padding-box; /* Prevents the border from being drawn inside the thumb */
+  }
+}
+
 @layer components {
   .bg-cube {
     box-shadow: inset 0 4px 16px 0 #00000070;

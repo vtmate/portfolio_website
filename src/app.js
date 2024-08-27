@@ -31,6 +31,7 @@ projects.forEach((project) => {
   const content = projectElements[`${project}Content`];
 
   btn.addEventListener("click", () => {
+    document.body.style.overflow = "hidden";
     modal.classList.remove("hidden");
     setTimeout(() => {
       modal.classList.toggle("h-0");
@@ -51,6 +52,7 @@ projects.forEach((project) => {
   });
 
   close.addEventListener("click", () => {
+    document.body.style.overflow = "auto";
     content.classList.toggle("opacity-0");
     content.classList.toggle("opacity-100");
     setTimeout(() => {
