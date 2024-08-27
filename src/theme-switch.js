@@ -3,9 +3,9 @@ const sunIcon = document.querySelector(".sun");
 const moonIcon = document.querySelector(".moon");
 const nameDark = document.querySelector(".name-dark");
 const nameLight = document.querySelector(".name-light");
-// const nameDarkHun = document.querySelector(".name-dark-hun");
-// const nameLightHun = document.querySelector(".name-light-hun");
-// const lanSwitch = document.getElementById("lan-switch");
+const nameDarkHun = document.querySelector(".name-dark-hun");
+const nameLightHun = document.querySelector(".name-light-hun");
+const lanSwitch = document.getElementById("lan-switch");
 
 // Github Logo
 const githubLogo = document.getElementById("github_logo");
@@ -26,70 +26,66 @@ const themeCheck = () => {
     document.documentElement.classList.add("dark");
     localStorage.setItem("theme", "dark");
     moonIcon.classList.add("display-none");
-    nameLight.classList.add("display-none");
+    // nameLight.classList.add("display-none");
     // nameLightHun.classList.add("display-none");
     // nameDarkHun.classList.add("display-none");
     githubLogo.setAttribute("fill", "#7D6590");
-    return;
+    introductionSwitch();
+  } else {
+    // nameDark.classList.add("display-none");
+    sunIcon.classList.add("display-none");
+    localStorage.setItem("theme", "light");
+    githubLogo.setAttribute("fill", "#5D3E74");
+    introductionSwitch();
   }
-  nameDark.classList.add("display-none");
-  sunIcon.classList.add("display-none");
-  localStorage.setItem("theme", "light");
-  githubLogo.setAttribute("fill", "#5D3E74");
-
-  // introductionSwitch();
 };
 
 // Manual Theme Switch
 const themeSwitch = () => {
-  nameLight.classList.toggle("display-none");
-  nameDark.classList.toggle("display-none");
-
   if (document.documentElement.classList.contains("dark")) {
     document.documentElement.classList.remove("dark");
     localStorage.setItem("theme", "light");
 
     iconToggle();
-    return;
+    introductionSwitch();
+  } else {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+    introductionSwitch();
+    iconToggle();
   }
-
-  document.documentElement.classList.add("dark");
-  localStorage.setItem("theme", "dark");
-  iconToggle();
-
-  // introductionSwitch();
 };
 
-// const introductionSwitch = () => {
-//   var dark = (localStorage.getItem("language") || "en") === "en";
-//   var en = localStorage.getItem("theme") === "dark";
+const introductionSwitch = () => {
+  var en = (localStorage.getItem("language") || "en") === "en";
+  var dark = localStorage.getItem("theme") === "dark";
 
-//   if (dark && en) {
-//     nameDark.classList.add("display-none");
-//     nameLight.classList.remove("display-none");
-//     nameDarkHun.classList.add("display-none");
-//     nameLightHun.classList.add("display-none");
-//     console.log("dark en");
-//   } else if (!dark && en) {
-//     nameDark.classList.remove("display-none");
-//     nameLight.classList.add("display-none");
-//     nameDarkHun.classList.add("display-none");
-//     nameLightHun.classList.add("display-none");
-//     console.log("!dark en");
-//   } else if (dark && !en) {
-//     nameDark.classList.add("display-none");
-//     nameLight.classList.add("display-none");
-//     nameDarkHun.classList.add("display-none");
-//     nameLightHun.classList.remove("display-none");
-//     console.log("dark !en");
-//   } else if (!dark && !en) {
-//     nameDark.classList.add("display-none");
-//     nameLight.classList.add("display-none");
-//     nameDarkHun.classList.remove("display-none");
-//     nameLightHun.classList.add("display-none");
-//     console.log("!dark !en");
-//   }
-// };
+  if (dark && en) {
+    nameDark.classList.remove("display-none");
+    nameLight.classList.add("display-none");
+    nameDarkHun.classList.add("display-none");
+    nameLightHun.classList.add("display-none");
+    // console.log("dark en");
+  } else if (!dark && en) {
+    nameDark.classList.add("display-none");
+    nameLight.classList.remove("display-none");
+    nameDarkHun.classList.add("display-none");
+    nameLightHun.classList.add("display-none");
+    // console.log("!dark en");
+  } else if (dark && !en) {
+    nameDark.classList.add("display-none");
+    nameLight.classList.add("display-none");
+    nameDarkHun.classList.remove("display-none");
+    nameLightHun.classList.add("display-none");
+    // console.log("dark !en");
+  } else if (!dark && !en) {
+    nameDark.classList.add("display-none");
+    nameLight.classList.add("display-none");
+    nameDarkHun.classList.add("display-none");
+    nameLightHun.classList.remove("display-none");
+    // console.log("!dark !en");
+  }
+};
 
 // call theme switch on clicking buttons
 sunIcon.addEventListener("click", () => {
@@ -102,9 +98,9 @@ moonIcon.addEventListener("click", () => {
   githubLogo.setAttribute("fill", "#7D6590");
 });
 
-// lanSwitch.addEventListener("click", () => {
-//   introductionSwitch();
-// });
+lanSwitch.addEventListener("click", () => {
+  introductionSwitch();
+});
 
 //invoke theme check on initial load
 themeCheck();
