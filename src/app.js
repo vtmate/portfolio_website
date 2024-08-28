@@ -35,7 +35,7 @@ projects.forEach((project) => {
     modal.classList.remove("hidden");
     setTimeout(() => {
       modal.classList.toggle("h-0");
-      modal.classList.toggle("h-[90%]");
+      modal.classList.toggle("h-[95%]");
       modal.classList.toggle("lg:h-[80%]");
       modal.classList.add("lg:p-8");
       modal.classList.add("p-4");
@@ -57,7 +57,7 @@ projects.forEach((project) => {
     content.classList.toggle("opacity-100");
     setTimeout(() => {
       modal.classList.toggle("h-0");
-      modal.classList.toggle("h-[90%]");
+      modal.classList.toggle("h-[95%]");
       modal.classList.toggle("lg:h-[80%]");
       modal.classList.remove("lg:p-8");
       modal.classList.remove("p-4");

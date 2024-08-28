@@ -1101,6 +1101,26 @@ body::-webkit-scrollbar-thumb{
   height: 100%;
 }
 
+.h-\[95\%\]{
+  height: 95%;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-\[25rem\]{
+  height: 25rem;
+}
+
+.h-\[40rem\]{
+  height: 40rem;
+}
+
+.h-\[35rem\]{
+  height: 35rem;
+}
+
 .w-0{
   width: 0px;
 }
@@ -1180,6 +1200,10 @@ body::-webkit-scrollbar-thumb{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[95\%\]{
+  width: 95%;
 }
 
 .min-w-8{
@@ -2001,6 +2025,10 @@ body::-webkit-scrollbar-thumb{
 
   .lg\:h-auto{
     height: auto;
+  }
+
+  .lg\:h-\[28rem\]{
+    height: 28rem;
   }
 
   .lg\:w-\[20rem\]{
