@@ -1093,32 +1093,12 @@ body::-webkit-scrollbar-thumb{
   height: 30rem;
 }
 
-.h-\[90\%\]{
-  height: 90%;
-}
-
-.h-full{
-  height: 100%;
-}
-
 .h-\[95\%\]{
   height: 95%;
 }
 
-.h-96{
-  height: 24rem;
-}
-
-.h-\[25rem\]{
-  height: 25rem;
-}
-
-.h-\[40rem\]{
-  height: 40rem;
-}
-
-.h-\[35rem\]{
-  height: 35rem;
+.h-full{
+  height: 100%;
 }
 
 .w-0{
@@ -1193,6 +1173,10 @@ body::-webkit-scrollbar-thumb{
   width: 60rem;
 }
 
+.w-\[95\%\]{
+  width: 95%;
+}
+
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
@@ -1202,12 +1186,12 @@ body::-webkit-scrollbar-thumb{
   width: 100%;
 }
 
-.w-\[95\%\]{
-  width: 95%;
-}
-
 .min-w-8{
   min-width: 2rem;
+}
+
+.max-w-40{
+  max-width: 10rem;
 }
 
 .max-w-\[23rem\]{
@@ -1916,6 +1900,20 @@ body::-webkit-scrollbar-thumb{
   }
 }
 
+@media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 1024px){
   .lg\:visible{
     visibility: visible;
@@ -2011,6 +2009,10 @@ body::-webkit-scrollbar-thumb{
     margin-top: 3rem;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:hidden{
     display: none;
   }
@@ -2019,16 +2021,16 @@ body::-webkit-scrollbar-thumb{
     height: 8rem;
   }
 
+  .lg\:h-\[28rem\]{
+    height: 28rem;
+  }
+
   .lg\:h-\[80\%\]{
     height: 80%;
   }
 
   .lg\:h-auto{
     height: auto;
-  }
-
-  .lg\:h-\[28rem\]{
-    height: 28rem;
   }
 
   .lg\:w-\[20rem\]{
