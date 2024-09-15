@@ -1101,6 +1101,10 @@ body::-webkit-scrollbar-thumb{
   height: 100%;
 }
 
+.h-20{
+  height: 5rem;
+}
+
 .w-0{
   width: 0px;
 }
@@ -1188,10 +1192,6 @@ body::-webkit-scrollbar-thumb{
 
 .min-w-8{
   min-width: 2rem;
-}
-
-.max-w-40{
-  max-width: 10rem;
 }
 
 .max-w-\[23rem\]{
@@ -1317,6 +1317,27 @@ body::-webkit-scrollbar-thumb{
 
 .animate-bounce{
   animation: bounce 1s infinite;
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+.animate-pulse{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer{
@@ -1504,6 +1525,11 @@ body::-webkit-scrollbar-thumb{
   background-color: rgb(237 241 245 / var(--tw-bg-opacity));
 }
 
+.bg-light-purple{
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 122 168 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
 }
@@ -1547,6 +1573,11 @@ body::-webkit-scrollbar-thumb{
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2{
@@ -1757,6 +1788,13 @@ body::-webkit-scrollbar-thumb{
 
 .border {
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 385px) {
+  .introduction {
+    /* max-width: 15rem; */
+    /* @apply mb-6 ml-6 mt-6; */
+  }
 }
 
 .hamburger-line{
@@ -2007,10 +2045,6 @@ body::-webkit-scrollbar-thumb{
 
   .lg\:mt-\[3rem\]{
     margin-top: 3rem;
-  }
-
-  .lg\:block{
-    display: block;
   }
 
   .lg\:hidden{

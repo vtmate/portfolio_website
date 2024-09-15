@@ -123,6 +123,13 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
 
+  @media (max-width: 385px) {
+    .introduction {
+      /* max-width: 15rem; */
+      /* @apply mb-6 ml-6 mt-6; */
+    }
+  }
+
   .hamburger-line {
     @apply fill-none stroke-dark-blue dark:stroke-light-blue;
   }
