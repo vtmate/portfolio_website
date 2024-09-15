@@ -1,4 +1,4 @@
-// Icons
+// icons
 const sunIcon = document.querySelector(".sun");
 const moonIcon = document.querySelector(".moon");
 const nameDark = document.querySelector(".name-dark");
@@ -7,32 +7,28 @@ const nameDarkHun = document.querySelector(".name-dark-hun");
 const nameLightHun = document.querySelector(".name-light-hun");
 const lanSwitch = document.getElementById("lan-switch");
 
-// Github Logo
+// github logo
 const githubLogo = document.getElementById("github_logo");
 
-// Theme Vars
+// theme Vars
 const userTheme = localStorage.getItem("theme");
 const systemTheme = window.matchMedia(" (prefers-color-scheme: dark)").matches;
 
-// Icon Toggling
+// icon Toggling
 const iconToggle = () => {
   moonIcon.classList.toggle("display-none");
   sunIcon.classList.toggle("display-none");
 };
 
-// Initial Theme Check
+// initial Theme Check
 const themeCheck = () => {
   if (userTheme === "dark" || (!userTheme && systemTheme)) {
     document.documentElement.classList.add("dark");
     localStorage.setItem("theme", "dark");
     moonIcon.classList.add("display-none");
-    // nameLight.classList.add("display-none");
-    // nameLightHun.classList.add("display-none");
-    // nameDarkHun.classList.add("display-none");
     githubLogo.setAttribute("fill", "#7D6590");
     introductionSwitch();
   } else {
-    // nameDark.classList.add("display-none");
     sunIcon.classList.add("display-none");
     localStorage.setItem("theme", "light");
     githubLogo.setAttribute("fill", "#5D3E74");
@@ -40,7 +36,7 @@ const themeCheck = () => {
   }
 };
 
-// Manual Theme Switch
+// manual Theme Switch
 const themeSwitch = () => {
   if (document.documentElement.classList.contains("dark")) {
     document.documentElement.classList.remove("dark");
@@ -65,25 +61,21 @@ const introductionSwitch = () => {
     nameLight.classList.add("display-none");
     nameDarkHun.classList.add("display-none");
     nameLightHun.classList.add("display-none");
-    // console.log("dark en");
   } else if (!dark && en) {
     nameDark.classList.add("display-none");
     nameLight.classList.remove("display-none");
     nameDarkHun.classList.add("display-none");
     nameLightHun.classList.add("display-none");
-    // console.log("!dark en");
   } else if (dark && !en) {
     nameDark.classList.add("display-none");
     nameLight.classList.add("display-none");
     nameDarkHun.classList.remove("display-none");
     nameLightHun.classList.add("display-none");
-    // console.log("dark !en");
   } else if (!dark && !en) {
     nameDark.classList.add("display-none");
     nameLight.classList.add("display-none");
     nameDarkHun.classList.add("display-none");
     nameLightHun.classList.remove("display-none");
-    // console.log("!dark !en");
   }
 };
 
